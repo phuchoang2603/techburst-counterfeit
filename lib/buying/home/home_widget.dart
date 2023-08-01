@@ -107,7 +107,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
               automaticallyImplyLeading: false,
               title: Text(
                 FFLocalizations.of(context).getText(
-                  'h3xh3e1r' /* Home */,
+                  'insb65c7' /* Home */,
                 ),
                 style: FlutterFlowTheme.of(context).displaySmall.override(
                       fontFamily:

@@ -233,12 +233,9 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         autofillHints: [AutofillHints.name],
                         obscureText: false,
                         decoration: InputDecoration(
-                          labelText: FFLocalizations.of(context).getText(
-                            '386bdzru' /* Display name */,
-                          ),
                           labelStyle: FlutterFlowTheme.of(context).labelLarge,
                           hintText: FFLocalizations.of(context).getText(
-                            '0dyk8vfj' /* Change display name.... */,
+                            '8gcvvct2' /* Change display name.... */,
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(

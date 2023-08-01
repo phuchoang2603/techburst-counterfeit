@@ -218,8 +218,6 @@ class _SellerDashboardWidgetState extends State<SellerDashboardWidget>
                                           width: 44.0,
                                           height: 44.0,
                                           decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .accent2,
                                             borderRadius:
                                                 BorderRadius.circular(12.0),
                                             border: Border.all(
@@ -292,7 +290,7 @@ class _SellerDashboardWidgetState extends State<SellerDashboardWidget>
                                                           .labelLargeFamily,
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .secondary,
+                                                      .primary,
                                                   useGoogleFonts: GoogleFonts
                                                           .asMap()
                                                       .containsKey(

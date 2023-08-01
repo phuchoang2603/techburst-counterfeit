@@ -115,7 +115,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Option 1',
       'vi': '',
     },
-    'h3xh3e1r': {
+    'insb65c7': {
       'en': 'Home',
       'vi': '',
     },
@@ -143,22 +143,22 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': '',
     },
     '386bdzru': {
-      'en': 'Pasword',
+      'en': '',
       'vi': '',
     },
-    '4mfteczs': {
+    'mm02qelj': {
       'en': 'Enter your name...',
       'vi': '',
     },
-    '6mrfldhz': {
+    '2wxcgiek': {
       'en': 'Enter your email...',
       'vi': '',
     },
-    '0817tqft': {
+    '77uncx2h': {
       'en': 'Enter your password...',
       'vi': '',
     },
-    '6pcmba5u': {
+    'b877hfrd': {
       'en': 'Re-enter your password...',
       'vi': '',
     },
@@ -178,11 +178,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Fill out the information below in order to access your account.',
       'vi': '',
     },
-    '18kwl9wn': {
+    '87xmzo11': {
       'en': 'Enter your email...',
       'vi': '',
     },
-    'j7ln498w': {
+    'pvw1czl1': {
       'en': 'Enter your password...',
       'vi': '',
     },
@@ -197,6 +197,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Scanner
   {
+    'oabd12x6': {
+      'en': 'Upload image',
+      'vi': '',
+    },
+    'kz5pdm9a': {
+      'en': 'Check Result',
+      'vi': '',
+    },
     '1t1f66x8': {
       'en': 'Scanner',
       'vi': '',
@@ -240,10 +248,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': '',
     },
     '386bdzru': {
-      'en': 'Display name',
+      'en': '',
       'vi': '',
     },
-    '0dyk8vfj': {
+    '8gcvvct2': {
       'en': 'Change display name....',
       'vi': '',
     },
@@ -277,7 +285,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // OrderHistory
   {
-    'gxk9whgf': {
+    'ssght5jy': {
       'en': 'Review',
       'vi': '',
     },
@@ -323,7 +331,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'vi': '',
     },
-    '7l7v37yq': {
+    'ocmttyo1': {
       'en': 'Change how it should be called...',
       'vi': '',
     },
@@ -331,7 +339,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Description',
       'vi': '',
     },
-    'owtn0ss6': {
+    '648gcrfq': {
       'en': 'Change how it should be described...',
       'vi': '',
     },
@@ -362,7 +370,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'vi': '',
     },
-    '1lb4lkvf': {
+    'wfvtualt': {
       'en': 'Set product\'s name...',
       'vi': '',
     },
@@ -370,7 +378,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Price',
       'vi': '',
     },
-    'j01u2pto': {
+    'b8ujggjh': {
       'en': 'Set product\'s price...',
       'vi': '',
     },
@@ -378,7 +386,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Description',
       'vi': '',
     },
-    'sn8rfenh': {
+    '3dmvgrml': {
       'en': 'Tell briefly about this product...',
       'vi': '',
     },
@@ -391,6 +399,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': '',
     },
     '7ac9cz3b': {
+      'en': 'Home',
+      'vi': '',
+    },
+  },
+  // ResultPage
+  {
+    'eopvnvgp': {
+      'en': 'Payment Confirmed!',
+      'vi': '',
+    },
+    'gjldi7bx': {
+      'en': 'Go home',
+      'vi': '',
+    },
+    'vn2fxayq': {
+      'en': 'Result',
+      'vi': '',
+    },
+    'tq7vuhif': {
       'en': 'Home',
       'vi': '',
     },

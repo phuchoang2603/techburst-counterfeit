@@ -315,12 +315,6 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           obscureText: false,
                                                           decoration:
                                                               InputDecoration(
-                                                            labelText:
-                                                                FFLocalizations.of(
-                                                                        context)
-                                                                    .getText(
-                                                              '386bdzru' /* Name */,
-                                                            ),
                                                             labelStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -329,7 +323,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                              '4mfteczs' /* Enter your name... */,
+                                                              'mm02qelj' /* Enter your name... */,
                                                             ),
                                                             enabledBorder:
                                                                 OutlineInputBorder(
@@ -387,6 +381,10 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                       .circular(
                                                                           20.0),
                                                             ),
+                                                            filled: true,
+                                                            fillColor: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .secondaryBackground,
                                                             contentPadding:
                                                                 EdgeInsetsDirectional
                                                                     .fromSTEB(
@@ -398,9 +396,6 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyLarge,
-                                                          keyboardType:
-                                                              TextInputType
-                                                                  .name,
                                                           validator: _model
                                                               .nameCreateControllerValidator
                                                               .asValidator(
@@ -424,12 +419,6 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           obscureText: false,
                                                           decoration:
                                                               InputDecoration(
-                                                            labelText:
-                                                                FFLocalizations.of(
-                                                                        context)
-                                                                    .getText(
-                                                              '386bdzru' /* Email */,
-                                                            ),
                                                             labelStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -438,7 +427,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                              '6mrfldhz' /* Enter your email... */,
+                                                              '2wxcgiek' /* Enter your email... */,
                                                             ),
                                                             enabledBorder:
                                                                 OutlineInputBorder(
@@ -511,9 +500,6 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyLarge,
-                                                          keyboardType:
-                                                              TextInputType
-                                                                  .emailAddress,
                                                           validator: _model
                                                               .emailCreateControllerValidator
                                                               .asValidator(
@@ -534,16 +520,9 @@ class _LoginWidgetState extends State<LoginWidget>
                                                         child: TextFormField(
                                                           controller: _model
                                                               .passwordCreateController,
-                                                          obscureText: !_model
-                                                              .passwordCreateVisibility,
+                                                          obscureText: false,
                                                           decoration:
                                                               InputDecoration(
-                                                            labelText:
-                                                                FFLocalizations.of(
-                                                                        context)
-                                                                    .getText(
-                                                              '386bdzru' /* Password */,
-                                                            ),
                                                             labelStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -552,7 +531,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                              '0817tqft' /* Enter your password... */,
+                                                              '77uncx2h' /* Enter your password... */,
                                                             ),
                                                             enabledBorder:
                                                                 OutlineInputBorder(
@@ -621,35 +600,10 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                         24.0,
                                                                         24.0,
                                                                         24.0),
-                                                            suffixIcon: InkWell(
-                                                              onTap: () =>
-                                                                  setState(
-                                                                () => _model
-                                                                        .passwordCreateVisibility =
-                                                                    !_model
-                                                                        .passwordCreateVisibility,
-                                                              ),
-                                                              focusNode: FocusNode(
-                                                                  skipTraversal:
-                                                                      true),
-                                                              child: Icon(
-                                                                _model.passwordCreateVisibility
-                                                                    ? Icons
-                                                                        .visibility_outlined
-                                                                    : Icons
-                                                                        .visibility_off_outlined,
-                                                                color: Color(
-                                                                    0xFF757575),
-                                                                size: 22.0,
-                                                              ),
-                                                            ),
                                                           ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyLarge,
-                                                          keyboardType:
-                                                              TextInputType
-                                                                  .visiblePassword,
                                                           validator: _model
                                                               .passwordCreateControllerValidator
                                                               .asValidator(
@@ -670,16 +624,9 @@ class _LoginWidgetState extends State<LoginWidget>
                                                         child: TextFormField(
                                                           controller: _model
                                                               .passwordConfController,
-                                                          obscureText: !_model
-                                                              .passwordConfVisibility,
+                                                          obscureText: false,
                                                           decoration:
                                                               InputDecoration(
-                                                            labelText:
-                                                                FFLocalizations.of(
-                                                                        context)
-                                                                    .getText(
-                                                              '386bdzru' /* Confirm password */,
-                                                            ),
                                                             labelStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -688,7 +635,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                              '6pcmba5u' /* Re-enter your password... */,
+                                                              'b877hfrd' /* Re-enter your password... */,
                                                             ),
                                                             enabledBorder:
                                                                 OutlineInputBorder(
@@ -757,35 +704,10 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                         24.0,
                                                                         24.0,
                                                                         24.0),
-                                                            suffixIcon: InkWell(
-                                                              onTap: () =>
-                                                                  setState(
-                                                                () => _model
-                                                                        .passwordConfVisibility =
-                                                                    !_model
-                                                                        .passwordConfVisibility,
-                                                              ),
-                                                              focusNode: FocusNode(
-                                                                  skipTraversal:
-                                                                      true),
-                                                              child: Icon(
-                                                                _model.passwordConfVisibility
-                                                                    ? Icons
-                                                                        .visibility_outlined
-                                                                    : Icons
-                                                                        .visibility_off_outlined,
-                                                                color: Color(
-                                                                    0xFF757575),
-                                                                size: 22.0,
-                                                              ),
-                                                            ),
                                                           ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyLarge,
-                                                          keyboardType:
-                                                              TextInputType
-                                                                  .visiblePassword,
                                                           validator: _model
                                                               .passwordConfControllerValidator
                                                               .asValidator(
@@ -1004,12 +926,6 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           obscureText: false,
                                                           decoration:
                                                               InputDecoration(
-                                                            labelText:
-                                                                FFLocalizations.of(
-                                                                        context)
-                                                                    .getText(
-                                                              '386bdzru' /* Email */,
-                                                            ),
                                                             labelStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -1018,7 +934,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                              '18kwl9wn' /* Enter your email... */,
+                                                              '87xmzo11' /* Enter your email... */,
                                                             ),
                                                             enabledBorder:
                                                                 OutlineInputBorder(
@@ -1118,12 +1034,6 @@ class _LoginWidgetState extends State<LoginWidget>
                                                               .passwordVisibility,
                                                           decoration:
                                                               InputDecoration(
-                                                            labelText:
-                                                                FFLocalizations.of(
-                                                                        context)
-                                                                    .getText(
-                                                              '386bdzru' /* Pasword */,
-                                                            ),
                                                             labelStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -1132,7 +1042,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                              'j7ln498w' /* Enter your password... */,
+                                                              'pvw1czl1' /* Enter your password... */,
                                                             ),
                                                             enabledBorder:
                                                                 OutlineInputBorder(

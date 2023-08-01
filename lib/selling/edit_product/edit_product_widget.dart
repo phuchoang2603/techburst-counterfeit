@@ -267,7 +267,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                         FlutterFlowTheme.of(context).labelLarge,
                                     hintText:
                                         FFLocalizations.of(context).getText(
-                                      '7l7v37yq' /* Change how it should be called... */,
+                                      'ocmttyo1' /* Change how it should be called... */,
                                     ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -340,7 +340,7 @@ class _EditProductWidgetState extends State<EditProductWidget>
                                         FlutterFlowTheme.of(context).labelLarge,
                                     hintText:
                                         FFLocalizations.of(context).getText(
-                                      'owtn0ss6' /* Change how it should be descri... */,
+                                      '648gcrfq' /* Change how it should be descri... */,
                                     ),
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(

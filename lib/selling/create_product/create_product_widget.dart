@@ -375,7 +375,7 @@ class _CreateProductWidgetState extends State<CreateProductWidget>
                                 labelStyle:
                                     FlutterFlowTheme.of(context).labelLarge,
                                 hintText: FFLocalizations.of(context).getText(
-                                  '1lb4lkvf' /* Set product's name... */,
+                                  'wfvtualt' /* Set product's name... */,
                                 ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
@@ -443,7 +443,7 @@ class _CreateProductWidgetState extends State<CreateProductWidget>
                                 labelStyle:
                                     FlutterFlowTheme.of(context).labelLarge,
                                 hintText: FFLocalizations.of(context).getText(
-                                  'j01u2pto' /* Set product's price... */,
+                                  'b8ujggjh' /* Set product's price... */,
                                 ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
@@ -513,7 +513,7 @@ class _CreateProductWidgetState extends State<CreateProductWidget>
                                 labelStyle:
                                     FlutterFlowTheme.of(context).labelLarge,
                                 hintText: FFLocalizations.of(context).getText(
-                                  'sn8rfenh' /* Tell briefly about this produc... */,
+                                  '3dmvgrml' /* Tell briefly about this produc... */,
                                 ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
@@ -590,64 +590,67 @@ class _CreateProductWidgetState extends State<CreateProductWidget>
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        FFButtonWidget(
-                          onPressed: () async {
-                            var productsRecordReference =
-                                ProductsRecord.collection.doc();
-                            await productsRecordReference
-                                .set(createProductsRecordData(
-                              name: _model.nameController.text,
-                              desc: _model.descController.text,
-                              thumb: _model.uploadedFileUrl,
-                              price:
-                                  double.tryParse(_model.priceController.text),
-                              startTime: getCurrentTimestamp,
-                              sellerId: currentUserReference,
-                              isSelling: true,
-                            ));
-                            _model.productId =
-                                ProductsRecord.getDocumentFromData(
-                                    createProductsRecordData(
-                                      name: _model.nameController.text,
-                                      desc: _model.descController.text,
-                                      thumb: _model.uploadedFileUrl,
-                                      price: double.tryParse(
-                                          _model.priceController.text),
-                                      startTime: getCurrentTimestamp,
-                                      sellerId: currentUserReference,
-                                      isSelling: true,
-                                    ),
-                                    productsRecordReference);
-                            context.safePop();
+                        Expanded(
+                          child: FFButtonWidget(
+                            onPressed: () async {
+                              var productsRecordReference =
+                                  ProductsRecord.collection.doc();
+                              await productsRecordReference
+                                  .set(createProductsRecordData(
+                                name: _model.nameController.text,
+                                desc: _model.descController.text,
+                                thumb: _model.uploadedFileUrl,
+                                price: double.tryParse(
+                                    _model.priceController.text),
+                                startTime: getCurrentTimestamp,
+                                sellerId: currentUserReference,
+                                isSelling: true,
+                              ));
+                              _model.productId =
+                                  ProductsRecord.getDocumentFromData(
+                                      createProductsRecordData(
+                                        name: _model.nameController.text,
+                                        desc: _model.descController.text,
+                                        thumb: _model.uploadedFileUrl,
+                                        price: double.tryParse(
+                                            _model.priceController.text),
+                                        startTime: getCurrentTimestamp,
+                                        sellerId: currentUserReference,
+                                        isSelling: true,
+                                      ),
+                                      productsRecordReference);
+                              context.safePop();
 
-                            setState(() {});
-                          },
-                          text: FFLocalizations.of(context).getText(
-                            'qzjcypm7' /* Post an item */,
-                          ),
-                          options: FFButtonOptions(
-                            height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context).primary,
-                            textStyle: FlutterFlowTheme.of(context)
-                                .titleSmall
-                                .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .titleSmallFamily,
-                                  color: Colors.white,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .titleSmallFamily),
-                                ),
-                            elevation: 3.0,
-                            borderSide: BorderSide(
-                              color: Colors.transparent,
-                              width: 1.0,
+                              setState(() {});
+                            },
+                            text: FFLocalizations.of(context).getText(
+                              'qzjcypm7' /* Post an item */,
                             ),
-                            borderRadius: BorderRadius.circular(10.0),
+                            options: FFButtonOptions(
+                              height: 40.0,
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  24.0, 0.0, 24.0, 0.0),
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              color: FlutterFlowTheme.of(context).primary,
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .titleSmall
+                                  .override(
+                                    fontFamily: FlutterFlowTheme.of(context)
+                                        .titleSmallFamily,
+                                    color: Colors.white,
+                                    useGoogleFonts: GoogleFonts.asMap()
+                                        .containsKey(
+                                            FlutterFlowTheme.of(context)
+                                                .titleSmallFamily),
+                                  ),
+                              elevation: 3.0,
+                              borderSide: BorderSide(
+                                color: Colors.transparent,
+                                width: 1.0,
+                              ),
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
                           ),
                         ),
                       ],
