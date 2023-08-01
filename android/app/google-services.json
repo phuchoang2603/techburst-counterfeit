@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "412214950215",
+    "project_id": "refurbished-marketplace",
+    "storage_bucket": "refurbished-marketplace.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412214950215:android:e197a5ff8137157442f462",
+        "android_client_info": {
+          "package_name": "com.mycompany.ebaymarketplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412214950215-lvul9med7e96r8gs9b0p1ns22kh2epo5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.ebaymarketplace",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "412214950215-jl557gi3bmhq38r38ucnpq8snn4cn1q5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0yiEP_vAxSvElN4-spY1lbSRo_KBSSQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412214950215-jl557gi3bmhq38r38ucnpq8snn4cn1q5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "412214950215-58g9ei70jkhtglvf9kcfj3qvabh6u4s3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.ebaymarketplace"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412214950215:android:643966cccddb750342f462",
+        "android_client_info": {
+          "package_name": "com.mycompany.marketplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412214950215-jl557gi3bmhq38r38ucnpq8snn4cn1q5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0yiEP_vAxSvElN4-spY1lbSRo_KBSSQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412214950215-jl557gi3bmhq38r38ucnpq8snn4cn1q5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "412214950215-58g9ei70jkhtglvf9kcfj3qvabh6u4s3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.ebaymarketplace"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
