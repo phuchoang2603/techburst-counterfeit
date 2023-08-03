@@ -1,1 +1,1 @@
-export 'tensorflow.dart' show Tensorflow;
+export 'image_recognition_widget.dart' show ImageRecognitionWidget;

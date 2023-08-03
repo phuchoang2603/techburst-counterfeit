@@ -96,7 +96,7 @@ class _ScannerWidgetState extends State<ScannerWidget> {
                 child: Container(
                   width: double.infinity,
                   height: 200.0,
-                  child: custom_widgets.Tensorflow(
+                  child: custom_widgets.ImageRecognitionWidget(
                     width: double.infinity,
                     height: 200.0,
                     imageUrl: _model.uploadedFileUrl,
