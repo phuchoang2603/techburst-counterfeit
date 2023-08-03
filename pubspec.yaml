@@ -30,6 +30,7 @@ dependencies:
   cloud_firestore: 4.8.0
   cloud_firestore_platform_interface: 5.15.0
   cloud_firestore_web: 3.6.0
+  equatable: 2.0.5
   file_picker: 5.2.6
   firebase_auth: 4.6.2
   firebase_auth_platform_interface: 6.15.2
@@ -96,9 +97,6 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
-  tflite_flutter: ^0.10.1
-  image_downloader: ^0.31.0
-  flutter_tflite: ^1.0.1
 
 dev_dependencies:
 

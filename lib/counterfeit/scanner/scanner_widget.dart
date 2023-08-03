@@ -1,12 +1,8 @@
-import '/auth/firebase_auth/auth_util.dart';
-import '/backend/backend.dart';
-import '/backend/firebase_storage/storage.dart';
+import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
-import '/custom_code/widgets/index.dart' as custom_widgets;
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -68,112 +64,201 @@ class _ScannerWidgetState extends State<ScannerWidget> {
           top: true,
           child: Column(
             mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
-                child: Row(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
+                child: Column(
                   mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20.0),
-                      child: Image.network(
-                        _model.uploadedFileUrl != null &&
-                                _model.uploadedFileUrl != ''
-                            ? _model.uploadedFileUrl
-                            : 'https://www.wolflair.com/wp-content/uploads/2017/01/placeholder.jpg',
-                        width: 224.0,
-                        height: 224.0,
-                        fit: BoxFit.fitWidth,
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(20.0),
+                            child: Image.network(
+                              'https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=',
+                              width: 224.0,
+                              height: 224.0,
+                              fit: BoxFit.fitWidth,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                      child: FFButtonWidget(
+                        onPressed: () async {
+                          final selectedMedia =
+                              await selectMediaWithSourceBottomSheet(
+                            context: context,
+                            maxWidth: 224.00,
+                            maxHeight: 224.00,
+                            allowPhoto: true,
+                          );
+                          if (selectedMedia != null &&
+                              selectedMedia.every((m) =>
+                                  validateFileFormat(m.storagePath, context))) {
+                            setState(() => _model.isDataUploading = true);
+                            var selectedUploadedFiles = <FFUploadedFile>[];
+
+                            try {
+                              selectedUploadedFiles = selectedMedia
+                                  .map((m) => FFUploadedFile(
+                                        name: m.storagePath.split('/').last,
+                                        bytes: m.bytes,
+                                        height: m.dimensions?.height,
+                                        width: m.dimensions?.width,
+                                        blurHash: m.blurHash,
+                                      ))
+                                  .toList();
+                            } finally {
+                              _model.isDataUploading = false;
+                            }
+                            if (selectedUploadedFiles.length ==
+                                selectedMedia.length) {
+                              setState(() {
+                                _model.uploadedLocalFile =
+                                    selectedUploadedFiles.first;
+                              });
+                            } else {
+                              setState(() {});
+                              return;
+                            }
+                          }
+
+                          _model.imgBB = await ImgBBCall.call(
+                            image: _model.uploadedLocalFile,
+                          );
+                          if ((_model.imgBB?.succeeded ?? true)) {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                  'Successfully uploaded',
+                                  style: TextStyle(
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryText,
+                                  ),
+                                ),
+                                duration: Duration(milliseconds: 4000),
+                                backgroundColor:
+                                    FlutterFlowTheme.of(context).secondary,
+                              ),
+                            );
+                          } else {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                  'Error! Please try again',
+                                  style: TextStyle(
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryText,
+                                  ),
+                                ),
+                                duration: Duration(milliseconds: 4000),
+                                backgroundColor:
+                                    FlutterFlowTheme.of(context).secondary,
+                              ),
+                            );
+                          }
+
+                          setState(() {});
+                        },
+                        text: FFLocalizations.of(context).getText(
+                          '5yngaas4' /* Upload Image */,
+                        ),
+                        options: FFButtonOptions(
+                          height: 40.0,
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              24.0, 0.0, 24.0, 0.0),
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          color: Colors.white,
+                          textStyle: FlutterFlowTheme.of(context)
+                              .titleSmall
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .titleSmallFamily,
+                                color: FlutterFlowTheme.of(context).primary,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .titleSmallFamily),
+                              ),
+                          elevation: 3.0,
+                          borderSide: BorderSide(
+                            color: FlutterFlowTheme.of(context).primary,
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
                       ),
                     ),
                   ],
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
-                child: Container(
-                  width: double.infinity,
-                  height: 200.0,
-                  child: custom_widgets.ImageRecognitionWidget(
-                    width: double.infinity,
-                    height: 200.0,
-                    imageUrl: _model.uploadedFileUrl,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 32.0),
                 child: FFButtonWidget(
                   onPressed: () async {
-                    final selectedMedia =
-                        await selectMediaWithSourceBottomSheet(
-                      context: context,
-                      maxWidth: 224.00,
-                      maxHeight: 224.00,
-                      allowPhoto: true,
+                    _model.animal = await AnimalRecognizationCall.call(
+                      url: ImgBBCall.imageUrl(
+                        (_model.imgBB?.jsonBody ?? ''),
+                      ),
                     );
-                    if (selectedMedia != null &&
-                        selectedMedia.every((m) =>
-                            validateFileFormat(m.storagePath, context))) {
-                      setState(() => _model.isDataUploading = true);
-                      var selectedUploadedFiles = <FFUploadedFile>[];
-
-                      var downloadUrls = <String>[];
-                      try {
-                        showUploadMessage(
-                          context,
-                          'Uploading file...',
-                          showLoading: true,
-                        );
-                        selectedUploadedFiles = selectedMedia
-                            .map((m) => FFUploadedFile(
-                                  name: m.storagePath.split('/').last,
-                                  bytes: m.bytes,
-                                  height: m.dimensions?.height,
-                                  width: m.dimensions?.width,
-                                  blurHash: m.blurHash,
-                                ))
-                            .toList();
-
-                        downloadUrls = (await Future.wait(
-                          selectedMedia.map(
-                            (m) async =>
-                                await uploadData(m.storagePath, m.bytes),
+                    if ((_model.animal?.succeeded ?? true)) {
+                      context.pushNamed(
+                        'ResultPage',
+                        queryParameters: {
+                          'apiResponse': serializeParam(
+                            (_model.animal?.jsonBody ?? ''),
+                            ParamType.JSON,
                           ),
-                        ))
-                            .where((u) => u != null)
-                            .map((u) => u!)
-                            .toList();
-                      } finally {
-                        ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                        _model.isDataUploading = false;
-                      }
-                      if (selectedUploadedFiles.length ==
-                              selectedMedia.length &&
-                          downloadUrls.length == selectedMedia.length) {
-                        setState(() {
-                          _model.uploadedLocalFile =
-                              selectedUploadedFiles.first;
-                          _model.uploadedFileUrl = downloadUrls.first;
-                        });
-                        showUploadMessage(context, 'Success!');
-                      } else {
-                        setState(() {});
-                        showUploadMessage(context, 'Failed to upload data');
-                        return;
-                      }
+                          'imageUrl': serializeParam(
+                            ImgBBCall.imageUrl(
+                              (_model.imgBB?.jsonBody ?? ''),
+                            ),
+                            ParamType.String,
+                          ),
+                          'className': serializeParam(
+                            AnimalRecognizationCall.className(
+                              (_model.animal?.jsonBody ?? ''),
+                            ).toString(),
+                            ParamType.String,
+                          ),
+                          'confidenceScore': serializeParam(
+                            AnimalRecognizationCall.confidenceScore(
+                              (_model.animal?.jsonBody ?? ''),
+                            ).toString(),
+                            ParamType.String,
+                          ),
+                        }.withoutNulls,
+                      );
+                    } else {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(
+                            'Error, please check your image_url',
+                            style: TextStyle(
+                              color: FlutterFlowTheme.of(context).primaryText,
+                            ),
+                          ),
+                          duration: Duration(milliseconds: 4000),
+                          backgroundColor:
+                              FlutterFlowTheme.of(context).secondary,
+                        ),
+                      );
                     }
 
-                    await ScannersRecord.collection
-                        .doc()
-                        .set(createScannersRecordData(
-                          imageUrl: _model.uploadedFileUrl,
-                        ));
+                    setState(() {});
                   },
                   text: FFLocalizations.of(context).getText(
-                    'hb32y78y' /* Upload Image */,
+                    'gxk9whgf' /* Check Result */,
                   ),
                   options: FFButtonOptions(
                     height: 40.0,

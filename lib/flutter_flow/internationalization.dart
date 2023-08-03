@@ -193,8 +193,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Scanner
   {
-    'hb32y78y': {
+    '5yngaas4': {
       'en': 'Upload Image',
+      'vi': '',
+    },
+    'gxk9whgf': {
+      'en': 'Check Result',
       'vi': '',
     },
     '1t1f66x8': {
@@ -391,6 +395,21 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': '',
     },
   },
+  // ResultPage
+  {
+    '100k3zgt': {
+      'en': 'Go Home',
+      'vi': '',
+    },
+    '2zcnvgnd': {
+      'en': 'Result Page',
+      'vi': '',
+    },
+    'x45hx5cw': {
+      'en': 'Home',
+      'vi': '',
+    },
+  },
   // ReviewBS
   {
     'qqf8wjqc': {
@@ -406,6 +425,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'gjldi7bx': {
       'en': 'Upload image',
+      'vi': '',
+    },
+    'knjm70ds': {
+      'en': '',
+      'vi': '',
+    },
+    'lip3zbth': {
+      'en': '',
       'vi': '',
     },
     'xsnbnv95': {

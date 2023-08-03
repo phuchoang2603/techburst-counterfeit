@@ -148,6 +148,17 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'CreateProduct',
           path: '/createProduct',
           builder: (context, params) => CreateProductWidget(),
+        ),
+        FFRoute(
+          name: 'ResultPage',
+          path: '/resultPage',
+          builder: (context, params) => ResultPageWidget(
+            apiResponse: params.getParam('apiResponse', ParamType.JSON),
+            imageUrl: params.getParam('imageUrl', ParamType.String),
+            className: params.getParam('className', ParamType.String),
+            confidenceScore:
+                params.getParam('confidenceScore', ParamType.String),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
