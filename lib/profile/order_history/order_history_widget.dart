@@ -330,7 +330,7 @@ class _OrderHistoryWidgetState extends State<OrderHistoryWidget> {
                                             },
                                             text: FFLocalizations.of(context)
                                                 .getText(
-                                              'ssght5jy' /* Review */,
+                                              'gxk9whgf' /* Review */,
                                             ),
                                             options: FFButtonOptions(
                                               height: 40.0,

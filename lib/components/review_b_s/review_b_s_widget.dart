@@ -163,7 +163,7 @@ class _ReviewBSWidgetState extends State<ReviewBSWidget> {
                       Navigator.pop(context);
                     },
                     text: FFLocalizations.of(context).getText(
-                      '3dxuwbuy' /* Submit */,
+                      'gxk9whgf' /* Submit */,
                     ),
                     options: FFButtonOptions(
                       height: 40.0,

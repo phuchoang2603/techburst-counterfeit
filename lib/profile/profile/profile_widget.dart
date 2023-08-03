@@ -375,7 +375,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                           context.pushNamed('Login');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'opftnu07' /* Delete Account */,
+                          'gxk9whgf' /* Delete Account */,
                         ),
                         options: FFButtonOptions(
                           height: 40.0,

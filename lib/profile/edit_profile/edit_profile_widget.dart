@@ -235,7 +235,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         decoration: InputDecoration(
                           labelStyle: FlutterFlowTheme.of(context).labelLarge,
                           hintText: FFLocalizations.of(context).getText(
-                            '8gcvvct2' /* Change display name.... */,
+                            'xt5wb1ia' /* Change display name.... */,
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
@@ -296,7 +296,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                 context.pushNamed('Profile');
               },
               text: FFLocalizations.of(context).getText(
-                '7pv1x4x6' /* Save Changes */,
+                'gxk9whgf' /* Save Changes */,
               ),
               options: FFButtonOptions(
                 height: 40.0,

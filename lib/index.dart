@@ -13,4 +13,3 @@ export '/selling/seller_dashboard/seller_dashboard_widget.dart'
 export '/selling/edit_product/edit_product_widget.dart' show EditProductWidget;
 export '/selling/create_product/create_product_widget.dart'
     show CreateProductWidget;
-export '/counterfeit/result_page/result_page_widget.dart' show ResultPageWidget;

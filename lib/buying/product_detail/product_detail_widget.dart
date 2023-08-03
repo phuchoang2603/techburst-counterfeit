@@ -508,7 +508,7 @@ class _ProductDetailWidgetState extends State<ProductDetailWidget>
                                 context.safePop();
                               },
                               text: FFLocalizations.of(context).getText(
-                                'xkw7maib' /* Buy Now */,
+                                'gxk9whgf' /* Buy Now */,
                               ),
                               options: FFButtonOptions(
                                 height: 40.0,

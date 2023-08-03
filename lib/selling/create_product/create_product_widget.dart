@@ -375,7 +375,7 @@ class _CreateProductWidgetState extends State<CreateProductWidget>
                                 labelStyle:
                                     FlutterFlowTheme.of(context).labelLarge,
                                 hintText: FFLocalizations.of(context).getText(
-                                  'wfvtualt' /* Set product's name... */,
+                                  '54482zke' /* Set product's name... */,
                                 ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
@@ -443,7 +443,7 @@ class _CreateProductWidgetState extends State<CreateProductWidget>
                                 labelStyle:
                                     FlutterFlowTheme.of(context).labelLarge,
                                 hintText: FFLocalizations.of(context).getText(
-                                  'b8ujggjh' /* Set product's price... */,
+                                  'f83ixebc' /* Set product's price... */,
                                 ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
@@ -513,7 +513,7 @@ class _CreateProductWidgetState extends State<CreateProductWidget>
                                 labelStyle:
                                     FlutterFlowTheme.of(context).labelLarge,
                                 hintText: FFLocalizations.of(context).getText(
-                                  '3dmvgrml' /* Tell briefly about this produc... */,
+                                  'a3z7jxmt' /* Tell briefly about this produc... */,
                                 ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
@@ -624,7 +624,7 @@ class _CreateProductWidgetState extends State<CreateProductWidget>
                               setState(() {});
                             },
                             text: FFLocalizations.of(context).getText(
-                              'qzjcypm7' /* Post an item */,
+                              'gxk9whgf' /* Post an item */,
                             ),
                             options: FFButtonOptions(
                               height: 40.0,

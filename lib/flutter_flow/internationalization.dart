@@ -146,24 +146,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'vi': '',
     },
-    'mm02qelj': {
+    'dustd7ia': {
       'en': 'Enter your name...',
       'vi': '',
     },
-    '2wxcgiek': {
+    'lmxtxavo': {
       'en': 'Enter your email...',
       'vi': '',
     },
-    '77uncx2h': {
+    'e36w66mu': {
       'en': 'Enter your password...',
       'vi': '',
     },
-    'b877hfrd': {
+    'fiprcvb1': {
       'en': 'Re-enter your password...',
       'vi': '',
     },
-    'j2vfbomn': {
-      'en': 'Sign Up',
+    'gxk9whgf': {
+      'en': 'Sign In',
       'vi': '',
     },
     'nl2bwekx': {
@@ -178,16 +178,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Fill out the information below in order to access your account.',
       'vi': '',
     },
-    '87xmzo11': {
+    'py00zl7z': {
       'en': 'Enter your email...',
       'vi': '',
     },
-    'pvw1czl1': {
+    'swtvxmaw': {
       'en': 'Enter your password...',
-      'vi': '',
-    },
-    'aycf0nuh': {
-      'en': 'Sign In',
       'vi': '',
     },
     'nw1dmpjd': {
@@ -197,12 +193,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Scanner
   {
-    'oabd12x6': {
-      'en': 'Upload image',
-      'vi': '',
-    },
-    'kz5pdm9a': {
-      'en': 'Check Result',
+    'hb32y78y': {
+      'en': 'Upload Image',
       'vi': '',
     },
     '1t1f66x8': {
@@ -224,7 +216,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Edit Profile',
       'vi': '',
     },
-    'opftnu07': {
+    'gxk9whgf': {
       'en': 'Delete Account',
       'vi': '',
     },
@@ -251,11 +243,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'vi': '',
     },
-    '8gcvvct2': {
+    'xt5wb1ia': {
       'en': 'Change display name....',
       'vi': '',
     },
-    '7pv1x4x6': {
+    'gxk9whgf': {
       'en': 'Save Changes',
       'vi': '',
     },
@@ -270,7 +262,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Description',
       'vi': '',
     },
-    'xkw7maib': {
+    'gxk9whgf': {
       'en': 'Buy Now',
       'vi': '',
     },
@@ -285,7 +277,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // OrderHistory
   {
-    'ssght5jy': {
+    'gxk9whgf': {
       'en': 'Review',
       'vi': '',
     },
@@ -331,7 +323,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'vi': '',
     },
-    'ocmttyo1': {
+    'y216zxbg': {
       'en': 'Change how it should be called...',
       'vi': '',
     },
@@ -339,15 +331,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Description',
       'vi': '',
     },
-    '648gcrfq': {
+    '2guer7kj': {
       'en': 'Change how it should be described...',
       'vi': '',
     },
     'gxk9whgf': {
-      'en': 'Delete',
-      'vi': '',
-    },
-    'r2zv7mjo': {
       'en': 'Save changes',
       'vi': '',
     },
@@ -370,7 +358,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'vi': '',
     },
-    'wfvtualt': {
+    '54482zke': {
       'en': 'Set product\'s name...',
       'vi': '',
     },
@@ -378,7 +366,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Price',
       'vi': '',
     },
-    'b8ujggjh': {
+    'f83ixebc': {
       'en': 'Set product\'s price...',
       'vi': '',
     },
@@ -386,11 +374,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Description',
       'vi': '',
     },
-    '3dmvgrml': {
+    'a3z7jxmt': {
       'en': 'Tell briefly about this product...',
       'vi': '',
     },
-    'qzjcypm7': {
+    'gxk9whgf': {
       'en': 'Post an item',
       'vi': '',
     },
@@ -403,38 +391,23 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': '',
     },
   },
-  // ResultPage
-  {
-    'eopvnvgp': {
-      'en': 'Payment Confirmed!',
-      'vi': '',
-    },
-    'gjldi7bx': {
-      'en': 'Go home',
-      'vi': '',
-    },
-    'vn2fxayq': {
-      'en': 'Result',
-      'vi': '',
-    },
-    'tq7vuhif': {
-      'en': 'Home',
-      'vi': '',
-    },
-  },
   // ReviewBS
   {
     'qqf8wjqc': {
       'en': 'Let us know how was your shopping\'s experience...',
       'vi': '',
     },
-    '3dxuwbuy': {
+    'gxk9whgf': {
       'en': 'Submit',
       'vi': '',
     },
   },
   // Miscellaneous
   {
+    'gjldi7bx': {
+      'en': 'Upload image',
+      'vi': '',
+    },
     'xsnbnv95': {
       'en': '',
       'vi': '',

@@ -323,7 +323,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                              'mm02qelj' /* Enter your name... */,
+                                                              'dustd7ia' /* Enter your name... */,
                                                             ),
                                                             enabledBorder:
                                                                 OutlineInputBorder(
@@ -427,7 +427,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                              '2wxcgiek' /* Enter your email... */,
+                                                              'lmxtxavo' /* Enter your email... */,
                                                             ),
                                                             enabledBorder:
                                                                 OutlineInputBorder(
@@ -531,7 +531,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                              '77uncx2h' /* Enter your password... */,
+                                                              'e36w66mu' /* Enter your password... */,
                                                             ),
                                                             enabledBorder:
                                                                 OutlineInputBorder(
@@ -635,7 +635,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                              'b877hfrd' /* Re-enter your password... */,
+                                                              'fiprcvb1' /* Re-enter your password... */,
                                                             ),
                                                             enabledBorder:
                                                                 OutlineInputBorder(
@@ -788,7 +788,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           text: FFLocalizations
                                                                   .of(context)
                                                               .getText(
-                                                            'j2vfbomn' /* Sign Up */,
+                                                            'gxk9whgf' /* Sign Up */,
                                                           ),
                                                           options:
                                                               FFButtonOptions(
@@ -934,7 +934,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                              '87xmzo11' /* Enter your email... */,
+                                                              'py00zl7z' /* Enter your email... */,
                                                             ),
                                                             enabledBorder:
                                                                 OutlineInputBorder(
@@ -1042,7 +1042,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                              'pvw1czl1' /* Enter your password... */,
+                                                              'swtvxmaw' /* Enter your password... */,
                                                             ),
                                                             enabledBorder:
                                                                 OutlineInputBorder(
@@ -1187,7 +1187,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                           text: FFLocalizations
                                                                   .of(context)
                                                               .getText(
-                                                            'aycf0nuh' /* Sign In */,
+                                                            'gxk9whgf' /* Sign In */,
                                                           ),
                                                           options:
                                                               FFButtonOptions(

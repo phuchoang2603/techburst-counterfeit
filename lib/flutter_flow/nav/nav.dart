@@ -5,7 +5,6 @@ import 'package:go_router/go_router.dart';
 import 'package:page_transition/page_transition.dart';
 import '/backend/backend.dart';
 
-import '/backend/supabase/supabase.dart';
 import '../../auth/base_auth_user_provider.dart';
 
 import '/index.dart';
@@ -149,14 +148,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'CreateProduct',
           path: '/createProduct',
           builder: (context, params) => CreateProductWidget(),
-        ),
-        FFRoute(
-          name: 'ResultPage',
-          path: '/resultPage',
-          builder: (context, params) => ResultPageWidget(
-            noteRef:
-                params.getParam<NotesRow>('noteRef', ParamType.SupabaseRow),
-          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
