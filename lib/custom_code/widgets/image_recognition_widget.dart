@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 
 import 'index.dart'; // Imports other custom widgets
 import 'package:image_picker/image_picker.dart';
-import 'package:tflite/tflite.dart';
+import 'package:flutter_tflite/flutter_tflite.dart';
 import 'package:image_downloader/image_downloader.dart';
 import 'dart:io';
 
