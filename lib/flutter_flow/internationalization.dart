@@ -122,71 +122,71 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Login
   {
-    'fjxf1q23': {
+    '9ejws23w': {
       'en': 'Sign In',
       'vi': '',
     },
-    'g0g0aasi': {
+    'rbeta6ig': {
       'en': 'Email Address',
       'vi': '',
     },
-    'eczmc84b': {
+    'mdqw2idw': {
       'en': 'Enter your email...',
       'vi': '',
     },
-    'zu3nc0ip': {
+    'glp8h9jc': {
       'en': 'Password',
       'vi': '',
     },
-    '9bu3s3lp': {
+    'd9e32qm7': {
       'en': 'Enter your password...',
       'vi': '',
     },
-    'khntuc0y': {
+    'dsojfei5': {
       'en': 'Sign In',
       'vi': '',
     },
-    'qll981xh': {
+    '911288z6': {
       'en': 'Forgot Password?',
       'vi': '',
     },
-    '6kz1hhyk': {
+    'fipl2a5c': {
       'en': 'Sign Up',
       'vi': '',
     },
-    '8yqa6mm3': {
+    'czbndc1p': {
       'en': 'Username',
       'vi': '',
     },
-    'ds7cnrp5': {
+    'n416xf6a': {
       'en': 'Enter your name...',
       'vi': '',
     },
-    'dc65r066': {
+    'rp70k3sq': {
       'en': 'Email Address',
       'vi': '',
     },
-    'tu51sr5p': {
+    '9cobhteb': {
       'en': 'Enter your email...',
       'vi': '',
     },
-    'fzphpj35': {
+    'tp8ecg2o': {
       'en': 'Password',
       'vi': '',
     },
-    '97zamraf': {
+    'i6ygpd26': {
       'en': 'Enter your password...',
       'vi': '',
     },
-    'sukj2sr7': {
+    '0be96sl3': {
       'en': 'Password confirmation',
       'vi': '',
     },
-    '9rjwmtzb': {
+    'dx25okby': {
       'en': 'Enter your password again...',
       'vi': '',
     },
-    'wx0cn78h': {
+    '0ooqd46b': {
       'en': 'Create Account',
       'vi': '',
     },
