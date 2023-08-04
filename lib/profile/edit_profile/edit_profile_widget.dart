@@ -296,7 +296,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                 context.pushNamed('Profile');
               },
               text: FFLocalizations.of(context).getText(
-                'gxk9whgf' /* Save Changes */,
+                'i0bv726s' /* Save Changes */,
               ),
               options: FFButtonOptions(
                 height: 40.0,

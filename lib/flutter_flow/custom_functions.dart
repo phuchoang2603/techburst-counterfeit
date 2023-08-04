@@ -21,3 +21,11 @@ double getAverageOfList(List<int> ratings) {
   double average = sum / ratings.length;
   return double.parse(average.toStringAsFixed(1));
 }
+
+double? get2Digits(double? score) {
+  // get only 2 digit of a decimal number
+  if (score == null) {
+    return null;
+  }
+  return double.parse(score.toStringAsFixed(2));
+}

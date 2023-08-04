@@ -336,7 +336,7 @@ class _ProductDetailWidgetState extends State<ProductDetailWidget>
                                       Icon(
                                         Icons.star_rounded,
                                         color: FlutterFlowTheme.of(context)
-                                            .primary,
+                                            .secondary,
                                         size: 24.0,
                                       ),
                                       StreamBuilder<List<ShopReviewsRecord>>(
@@ -508,7 +508,7 @@ class _ProductDetailWidgetState extends State<ProductDetailWidget>
                                 context.safePop();
                               },
                               text: FFLocalizations.of(context).getText(
-                                'gxk9whgf' /* Buy Now */,
+                                '05yxb0tl' /* Buy Now */,
                               ),
                               options: FFButtonOptions(
                                 height: 40.0,

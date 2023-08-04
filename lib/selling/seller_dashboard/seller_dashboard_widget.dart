@@ -470,7 +470,18 @@ class _SellerDashboardWidgetState extends State<SellerDashboardWidget>
                                   currency: '',
                                 ),
                                 textAlign: TextAlign.end,
-                                style: FlutterFlowTheme.of(context).titleMedium,
+                                style: FlutterFlowTheme.of(context)
+                                    .titleMedium
+                                    .override(
+                                      fontFamily: FlutterFlowTheme.of(context)
+                                          .titleMediumFamily,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondary,
+                                      useGoogleFonts: GoogleFonts.asMap()
+                                          .containsKey(
+                                              FlutterFlowTheme.of(context)
+                                                  .titleMediumFamily),
+                                    ),
                               ),
                             ],
                           ),

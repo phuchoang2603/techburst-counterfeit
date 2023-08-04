@@ -78,13 +78,18 @@ class _ScannerWidgetState extends State<ScannerWidget> {
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(20.0),
-                            child: Image.network(
-                              'https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=',
-                              width: 224.0,
-                              height: 224.0,
-                              fit: BoxFit.fitWidth,
+                          Expanded(
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20.0),
+                              child: Image.network(
+                                _model.imgBBUpload
+                                    ? ImgBBCall.imageUrl(
+                                        (_model.imgBB?.jsonBody ?? ''),
+                                      )
+                                    : 'https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=',
+                                height: 500.0,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ],
@@ -98,8 +103,8 @@ class _ScannerWidgetState extends State<ScannerWidget> {
                           final selectedMedia =
                               await selectMediaWithSourceBottomSheet(
                             context: context,
-                            maxWidth: 224.00,
-                            maxHeight: 224.00,
+                            maxWidth: 500.00,
+                            maxHeight: 500.00,
                             allowPhoto: true,
                           );
                           if (selectedMedia != null &&
@@ -148,9 +153,12 @@ class _ScannerWidgetState extends State<ScannerWidget> {
                                 ),
                                 duration: Duration(milliseconds: 4000),
                                 backgroundColor:
-                                    FlutterFlowTheme.of(context).secondary,
+                                    FlutterFlowTheme.of(context).success,
                               ),
                             );
+                            setState(() {
+                              _model.imgBBUpload = true;
+                            });
                           } else {
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
@@ -163,15 +171,16 @@ class _ScannerWidgetState extends State<ScannerWidget> {
                                 ),
                                 duration: Duration(milliseconds: 4000),
                                 backgroundColor:
-                                    FlutterFlowTheme.of(context).secondary,
+                                    FlutterFlowTheme.of(context).error,
                               ),
                             );
+                            _model.imgBBUpload = false;
                           }
 
                           setState(() {});
                         },
                         text: FFLocalizations.of(context).getText(
-                          '5yngaas4' /* Upload Image */,
+                          'gqvz7r9z' /* Upload Image */,
                         ),
                         options: FFButtonOptions(
                           height: 40.0,
@@ -206,7 +215,7 @@ class _ScannerWidgetState extends State<ScannerWidget> {
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 32.0),
                 child: FFButtonWidget(
                   onPressed: () async {
-                    _model.animal = await AnimalRecognizationCall.call(
+                    _model.animal = await AuthenticlRecognizationCall.call(
                       url: ImgBBCall.imageUrl(
                         (_model.imgBB?.jsonBody ?? ''),
                       ),
@@ -226,16 +235,16 @@ class _ScannerWidgetState extends State<ScannerWidget> {
                             ParamType.String,
                           ),
                           'className': serializeParam(
-                            AnimalRecognizationCall.className(
+                            AuthenticlRecognizationCall.className(
                               (_model.animal?.jsonBody ?? ''),
                             ).toString(),
                             ParamType.String,
                           ),
                           'confidenceScore': serializeParam(
-                            AnimalRecognizationCall.confidenceScore(
+                            AuthenticlRecognizationCall.confidenceScore(
                               (_model.animal?.jsonBody ?? ''),
-                            ).toString(),
-                            ParamType.String,
+                            ),
+                            ParamType.double,
                           ),
                         }.withoutNulls,
                       );
@@ -249,8 +258,7 @@ class _ScannerWidgetState extends State<ScannerWidget> {
                             ),
                           ),
                           duration: Duration(milliseconds: 4000),
-                          backgroundColor:
-                              FlutterFlowTheme.of(context).secondary,
+                          backgroundColor: FlutterFlowTheme.of(context).error,
                         ),
                       );
                     }

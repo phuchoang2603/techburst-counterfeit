@@ -157,7 +157,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             imageUrl: params.getParam('imageUrl', ParamType.String),
             className: params.getParam('className', ParamType.String),
             confidenceScore:
-                params.getParam('confidenceScore', ParamType.String),
+                params.getParam('confidenceScore', ParamType.double),
           ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
@@ -338,14 +338,13 @@ class FFRoute {
                 )
               : builder(context, ffParams);
           final child = appStateNotifier.loading
-              ? Center(
-                  child: SizedBox(
-                    width: 50.0,
-                    height: 50.0,
-                    child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(
-                        FlutterFlowTheme.of(context).primary,
-                      ),
+              ? Container(
+                  color: FlutterFlowTheme.of(context).primaryBackground,
+                  child: Center(
+                    child: Image.asset(
+                      'assets/images/textUnder.png',
+                      width: MediaQuery.sizeOf(context).width * 0.8,
+                      fit: BoxFit.contain,
                     ),
                   ),
                 )

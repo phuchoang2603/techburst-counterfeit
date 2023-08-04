@@ -115,10 +115,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Option 1',
       'vi': '',
     },
-    'insb65c7': {
-      'en': 'Home',
-      'vi': '',
-    },
     '0vrypyyq': {
       'en': 'Home',
       'vi': '',
@@ -126,64 +122,84 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Login
   {
-    '5pvdc3ov': {
-      'en': 'brand.ai',
-      'vi': '',
-    },
-    'wbbuij7b': {
+    'cogkbwhu': {
       'en': 'Create Account',
       'vi': '',
     },
-    '2128so39': {
+    '0j7p89ra': {
       'en': 'Create Account',
       'vi': '',
     },
-    'px1tcixx': {
+    'iagamwgw': {
       'en': 'Let\'s get started by filling out the form below.',
       'vi': '',
     },
-    '386bdzru': {
-      'en': '',
+    'shk02u7o': {
+      'en': 'Name',
       'vi': '',
     },
-    'dustd7ia': {
+    'bzrpni7k': {
       'en': 'Enter your name...',
       'vi': '',
     },
-    'lmxtxavo': {
+    '0r2yzhp3': {
+      'en': 'Email',
+      'vi': '',
+    },
+    'knev5e5v': {
       'en': 'Enter your email...',
       'vi': '',
     },
-    'e36w66mu': {
+    'hihuucol': {
+      'en': 'Password',
+      'vi': '',
+    },
+    'yvlkjfs8': {
       'en': 'Enter your password...',
       'vi': '',
     },
-    'fiprcvb1': {
+    'chg626u1': {
+      'en': 'Confirm',
+      'vi': '',
+    },
+    'ffx5ymim': {
       'en': 'Re-enter your password...',
       'vi': '',
     },
-    'gxk9whgf': {
-      'en': 'Sign In',
+    'hl91hp8m': {
+      'en': 'Sign Up',
       'vi': '',
     },
-    'nl2bwekx': {
+    'i5tzp224': {
       'en': 'Log In',
       'vi': '',
     },
-    '2kp7qh9n': {
+    '0mtx72wi': {
       'en': 'Welcome Back',
       'vi': '',
     },
-    'h3j9dvaj': {
+    '2tjjvi0f': {
       'en': 'Fill out the information below in order to access your account.',
       'vi': '',
     },
-    'py00zl7z': {
+    'e2m1iv4k': {
+      'en': 'Email',
+      'vi': '',
+    },
+    'akxsgolf': {
       'en': 'Enter your email...',
       'vi': '',
     },
-    'swtvxmaw': {
+    'a7m15yrr': {
+      'en': 'Password',
+      'vi': '',
+    },
+    'rl9f2xz2': {
       'en': 'Enter your password...',
+      'vi': '',
+    },
+    'xzh2znpq': {
+      'en': 'Sign In',
       'vi': '',
     },
     'nw1dmpjd': {
@@ -193,7 +209,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Scanner
   {
-    '5yngaas4': {
+    'gqvz7r9z': {
       'en': 'Upload Image',
       'vi': '',
     },
@@ -220,7 +236,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Edit Profile',
       'vi': '',
     },
-    'gxk9whgf': {
+    'temkg9em': {
       'en': 'Delete Account',
       'vi': '',
     },
@@ -251,7 +267,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Change display name....',
       'vi': '',
     },
-    'gxk9whgf': {
+    'i0bv726s': {
       'en': 'Save Changes',
       'vi': '',
     },
@@ -266,7 +282,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Description',
       'vi': '',
     },
-    'gxk9whgf': {
+    '05yxb0tl': {
       'en': 'Buy Now',
       'vi': '',
     },
@@ -281,7 +297,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // OrderHistory
   {
-    'gxk9whgf': {
+    '6acyb5tz': {
       'en': 'Review',
       'vi': '',
     },
@@ -397,15 +413,15 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // ResultPage
   {
-    '100k3zgt': {
+    '4utsxuvg': {
       'en': 'Go Home',
       'vi': '',
     },
-    '2zcnvgnd': {
-      'en': 'Result Page',
+    '2qmnogww': {
+      'en': 'Result',
       'vi': '',
     },
-    'x45hx5cw': {
+    'gr3j4f98': {
       'en': 'Home',
       'vi': '',
     },

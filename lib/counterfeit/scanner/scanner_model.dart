@@ -8,6 +8,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 class ScannerModel extends FlutterFlowModel {
+  ///  Local state fields for this page.
+
+  bool imgBBUpload = false;
+
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
@@ -17,7 +21,7 @@ class ScannerModel extends FlutterFlowModel {
 
   // Stores action output result for [Backend Call - API (imgBB)] action in Button widget.
   ApiCallResponse? imgBB;
-  // Stores action output result for [Backend Call - API (animalRecognization)] action in Button widget.
+  // Stores action output result for [Backend Call - API (authenticlRecognization)] action in Check widget.
   ApiCallResponse? animal;
 
   /// Initialization and disposal methods.

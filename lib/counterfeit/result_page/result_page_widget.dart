@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -20,7 +21,7 @@ class ResultPageWidget extends StatefulWidget {
   final dynamic apiResponse;
   final String? imageUrl;
   final String? className;
-  final String? confidenceScore;
+  final double? confidenceScore;
 
   @override
   _ResultPageWidgetState createState() => _ResultPageWidgetState();
@@ -68,7 +69,7 @@ class _ResultPageWidgetState extends State<ResultPageWidget> {
         ),
         title: Text(
           FFLocalizations.of(context).getText(
-            '2zcnvgnd' /* Result Page */,
+            '2qmnogww' /* Result */,
           ),
           style: FlutterFlowTheme.of(context).displaySmall.override(
                 fontFamily: FlutterFlowTheme.of(context).displaySmallFamily,
@@ -87,30 +88,63 @@ class _ResultPageWidgetState extends State<ResultPageWidget> {
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
-              child: Container(
-                width: 140.0,
-                height: 140.0,
-                decoration: BoxDecoration(
-                  color: FlutterFlowTheme.of(context).accent1,
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: FlutterFlowTheme.of(context).primary,
-                    width: 2.0,
+            Stack(
+              children: [
+                if (widget.className == 'Authentic')
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
+                    child: Container(
+                      width: 140.0,
+                      height: 140.0,
+                      decoration: BoxDecoration(
+                        color: FlutterFlowTheme.of(context).accent1,
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: FlutterFlowTheme.of(context).primary,
+                          width: 2.0,
+                        ),
+                      ),
+                      alignment: AlignmentDirectional(0.0, 0.0),
+                      child: Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            30.0, 30.0, 30.0, 30.0),
+                        child: Icon(
+                          Icons.check_rounded,
+                          color: FlutterFlowTheme.of(context).primary,
+                          size: 60.0,
+                        ),
+                      ),
+                    ),
                   ),
-                ),
-                alignment: AlignmentDirectional(0.0, 0.0),
-                child: Padding(
-                  padding:
-                      EdgeInsetsDirectional.fromSTEB(30.0, 30.0, 30.0, 30.0),
-                  child: Icon(
-                    Icons.check_rounded,
-                    color: FlutterFlowTheme.of(context).primary,
-                    size: 60.0,
+                if (widget.className == 'Fake')
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
+                    child: Container(
+                      width: 140.0,
+                      height: 140.0,
+                      decoration: BoxDecoration(
+                        color: Color(0xFFFFA2A6),
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: FlutterFlowTheme.of(context).error,
+                          width: 2.0,
+                        ),
+                      ),
+                      alignment: AlignmentDirectional(0.0, 0.0),
+                      child: Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            30.0, 30.0, 30.0, 30.0),
+                        child: Icon(
+                          Icons.clear_rounded,
+                          color: FlutterFlowTheme.of(context).error,
+                          size: 60.0,
+                        ),
+                      ),
+                    ),
                   ),
-                ),
-              ),
+              ],
             ),
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
@@ -128,10 +162,10 @@ class _ResultPageWidgetState extends State<ResultPageWidget> {
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
               child: Text(
-                valueOrDefault<String>(
-                  widget.confidenceScore,
-                  '1',
-                ),
+                'Confidence: ${formatNumber(
+                  functions.get2Digits(widget.confidenceScore),
+                  formatType: FormatType.percent,
+                )}',
                 style: FlutterFlowTheme.of(context).displayMedium,
               ),
             ),
@@ -143,7 +177,7 @@ class _ResultPageWidgetState extends State<ResultPageWidget> {
                   widget.imageUrl!,
                   width: 224.0,
                   height: 224.0,
-                  fit: BoxFit.fitWidth,
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
@@ -154,28 +188,40 @@ class _ResultPageWidgetState extends State<ResultPageWidget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    FFButtonWidget(
-                      onPressed: () {
-                        print('Button pressed ...');
-                      },
-                      text: FFLocalizations.of(context).getText(
-                        '100k3zgt' /* Go Home */,
-                      ),
-                      options: FFButtonOptions(
-                        width: 230.0,
-                        height: 50.0,
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).alternate,
-                        textStyle: FlutterFlowTheme.of(context).bodyLarge,
-                        elevation: 0.0,
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                      child: FFButtonWidget(
+                        onPressed: () async {
+                          context.pushNamed('Home');
+                        },
+                        text: FFLocalizations.of(context).getText(
+                          '4utsxuvg' /* Go Home */,
                         ),
-                        borderRadius: BorderRadius.circular(40.0),
+                        options: FFButtonOptions(
+                          height: 40.0,
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              24.0, 0.0, 24.0, 0.0),
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 0.0),
+                          color: FlutterFlowTheme.of(context).primary,
+                          textStyle: FlutterFlowTheme.of(context)
+                              .titleSmall
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .titleSmallFamily,
+                                color: Colors.white,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .titleSmallFamily),
+                              ),
+                          elevation: 3.0,
+                          borderSide: BorderSide(
+                            color: Colors.transparent,
+                            width: 1.0,
+                          ),
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
                       ),
                     ),
                   ],

@@ -9,13 +9,14 @@ export 'api_manager.dart' show ApiCallResponse;
 
 const _kPrivateApiFunctionName = 'ffPrivateApiCall';
 
-class AnimalRecognizationCall {
+class AuthenticlRecognizationCall {
   static Future<ApiCallResponse> call({
     String? url = '',
   }) {
     return ApiManager.instance.makeApiCall(
-      callName: 'animalRecognization',
-      apiUrl: 'https://animal-o7y735hinq-as.a.run.app?url=${url}&apikey=1234',
+      callName: 'authenticlRecognization',
+      apiUrl:
+          'https://jellyfish-app-uq2na.ondigitalocean.app/?apikey=1234&url=${url}',
       callType: ApiCallType.POST,
       headers: {},
       params: {},
