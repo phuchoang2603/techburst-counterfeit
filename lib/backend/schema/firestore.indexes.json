@@ -1,0 +1,22 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "products",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "seller_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "is_selling",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "end_time",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ]
+}
