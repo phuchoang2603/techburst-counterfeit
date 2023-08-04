@@ -46,7 +46,64 @@ class _SellerDashboardWidgetState extends State<SellerDashboardWidget>
         ),
       ],
     ),
+    'rowOnPageLoadAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0.0, 80.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+    'buttonOnPageLoadAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0.0, 80.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
     'textOnPageLoadAnimation2': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: Offset(0.0, 80.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+    'listViewOnPageLoadAnimation': AnimationInfo(
       trigger: AnimationTrigger.onPageLoad,
       effects: [
         FadeEffect(
@@ -71,13 +128,6 @@ class _SellerDashboardWidgetState extends State<SellerDashboardWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => SellerDashboardModel());
-
-    setupAnimations(
-      animationsMap.values.where((anim) =>
-          anim.trigger == AnimationTrigger.onActionTrigger ||
-          !anim.applyInitialState),
-      this,
-    );
   }
 
   @override
@@ -308,7 +358,8 @@ class _SellerDashboardWidgetState extends State<SellerDashboardWidget>
                             );
                           }).divide(SizedBox(width: 8.0)),
                         ),
-                      );
+                      ).animateOnPageLoad(
+                          animationsMap['rowOnPageLoadAnimation']!);
                     },
                   ),
                 ),
@@ -343,7 +394,8 @@ class _SellerDashboardWidgetState extends State<SellerDashboardWidget>
                     ),
                     borderRadius: BorderRadius.circular(8.0),
                   ),
-                ),
+                ).animateOnPageLoad(
+                    animationsMap['buttonOnPageLoadAnimation']!),
               ),
               Align(
                 alignment: AlignmentDirectional(-1.0, 0.0),
@@ -487,7 +539,8 @@ class _SellerDashboardWidgetState extends State<SellerDashboardWidget>
                           ),
                         );
                       },
-                    );
+                    ).animateOnPageLoad(
+                        animationsMap['listViewOnPageLoadAnimation']!);
                   },
                 ),
               ),
