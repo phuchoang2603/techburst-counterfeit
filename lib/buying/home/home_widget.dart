@@ -38,7 +38,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
         ),
       ],
     ),
-    'rowOnPageLoadAnimation': AnimationInfo(
+    'rowOnPageLoadAnimation1': AnimationInfo(
       trigger: AnimationTrigger.onPageLoad,
       effects: [
         MoveEffect(
@@ -46,6 +46,30 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
           delay: 0.ms,
           duration: 720.ms,
           begin: Offset(0.0, -27.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+    'rowOnPageLoadAnimation2': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        MoveEffect(
+          curve: Curves.elasticOut,
+          delay: 0.ms,
+          duration: 1120.ms,
+          begin: Offset(-46.0, 0.0),
+          end: Offset(0.0, 0.0),
+        ),
+      ],
+    ),
+    'stackOnPageLoadAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        MoveEffect(
+          curve: Curves.elasticOut,
+          delay: 0.ms,
+          duration: 1120.ms,
+          begin: Offset(-46.0, 0.0),
           end: Offset(0.0, 0.0),
         ),
       ],
@@ -300,7 +324,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                         ),
                       ],
                     ).animateOnPageLoad(
-                        animationsMap['rowOnPageLoadAnimation']!),
+                        animationsMap['rowOnPageLoadAnimation1']!),
                   ),
                   Padding(
                     padding:
@@ -315,7 +339,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                           style: FlutterFlowTheme.of(context).titleLarge,
                         ),
                       ],
-                    ),
+                    ).animateOnPageLoad(
+                        animationsMap['rowOnPageLoadAnimation2']!),
                   ),
                   Stack(
                     children: [
@@ -655,7 +680,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                           ),
                         ),
                     ],
-                  ),
+                  ).animateOnPageLoad(
+                      animationsMap['stackOnPageLoadAnimation']!),
                 ],
               ),
             ),

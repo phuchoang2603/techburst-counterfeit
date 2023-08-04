@@ -122,84 +122,72 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Login
   {
-    'cogkbwhu': {
-      'en': 'Create Account',
+    'fjxf1q23': {
+      'en': 'Sign In',
       'vi': '',
     },
-    '0j7p89ra': {
-      'en': 'Create Account',
+    'g0g0aasi': {
+      'en': 'Email Address',
       'vi': '',
     },
-    'iagamwgw': {
-      'en': 'Let\'s get started by filling out the form below.',
-      'vi': '',
-    },
-    'shk02u7o': {
-      'en': 'Name',
-      'vi': '',
-    },
-    'bzrpni7k': {
-      'en': 'Enter your name...',
-      'vi': '',
-    },
-    '0r2yzhp3': {
-      'en': 'Email',
-      'vi': '',
-    },
-    'knev5e5v': {
+    'eczmc84b': {
       'en': 'Enter your email...',
       'vi': '',
     },
-    'hihuucol': {
+    'zu3nc0ip': {
       'en': 'Password',
       'vi': '',
     },
-    'yvlkjfs8': {
+    '9bu3s3lp': {
       'en': 'Enter your password...',
       'vi': '',
     },
-    'chg626u1': {
-      'en': 'Confirm',
+    'khntuc0y': {
+      'en': 'Sign In',
       'vi': '',
     },
-    'ffx5ymim': {
-      'en': 'Re-enter your password...',
+    'qll981xh': {
+      'en': 'Forgot Password?',
       'vi': '',
     },
-    'hl91hp8m': {
+    '6kz1hhyk': {
       'en': 'Sign Up',
       'vi': '',
     },
-    'i5tzp224': {
-      'en': 'Log In',
+    '8yqa6mm3': {
+      'en': 'Username',
       'vi': '',
     },
-    '0mtx72wi': {
-      'en': 'Welcome Back',
+    'ds7cnrp5': {
+      'en': 'Enter your name...',
       'vi': '',
     },
-    '2tjjvi0f': {
-      'en': 'Fill out the information below in order to access your account.',
+    'dc65r066': {
+      'en': 'Email Address',
       'vi': '',
     },
-    'e2m1iv4k': {
-      'en': 'Email',
-      'vi': '',
-    },
-    'akxsgolf': {
+    'tu51sr5p': {
       'en': 'Enter your email...',
       'vi': '',
     },
-    'a7m15yrr': {
+    'fzphpj35': {
       'en': 'Password',
       'vi': '',
     },
-    'rl9f2xz2': {
+    '97zamraf': {
       'en': 'Enter your password...',
       'vi': '',
     },
-    'xzh2znpq': {
-      'en': 'Sign In',
+    'sukj2sr7': {
+      'en': 'Password confirmation',
+      'vi': '',
+    },
+    '9rjwmtzb': {
+      'en': 'Enter your password again...',
+      'vi': '',
+    },
+    'wx0cn78h': {
+      'en': 'Create Account',
       'vi': '',
     },
     'nw1dmpjd': {
