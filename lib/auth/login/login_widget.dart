@@ -96,12 +96,12 @@ class _LoginWidgetState extends State<LoginWidget> {
                             tabs: [
                               Tab(
                                 text: FFLocalizations.of(context).getText(
-                                  '9ejws23w' /* Sign In */,
+                                  '74b2rf2r' /* Sign In */,
                                 ),
                               ),
                               Tab(
                                 text: FFLocalizations.of(context).getText(
-                                  'fipl2a5c' /* Sign Up */,
+                                  'izxu5k5r' /* Sign Up */,
                                 ),
                               ),
                             ],
@@ -128,7 +128,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             labelText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              'rbeta6ig' /* Email Address */,
+                                              'cyo82ik4' /* Email Address */,
                                             ),
                                             labelStyle:
                                                 FlutterFlowTheme.of(context)
@@ -136,7 +136,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             hintText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              'mdqw2idw' /* Enter your email... */,
+                                              '550pbepm' /* Enter your email... */,
                                             ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
@@ -211,7 +211,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             labelText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              'glp8h9jc' /* Password */,
+                                              'mh7i0hwk' /* Password */,
                                             ),
                                             labelStyle:
                                                 FlutterFlowTheme.of(context)
@@ -219,7 +219,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             hintText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              'd9e32qm7' /* Enter your password... */,
+                                              '95km7aeh' /* Enter your password... */,
                                             ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
@@ -325,7 +325,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            'dsojfei5' /* Sign In */,
+                                            'x4oykfp1' /* Sign In */,
                                           ),
                                           options: FFButtonOptions(
                                             width: 230.0,
@@ -374,7 +374,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            '911288z6' /* Forgot Password? */,
+                                            'qvmv3nwj' /* Forgot Password? */,
                                           ),
                                           options: FFButtonOptions(
                                             width: 170.0,
@@ -433,7 +433,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             labelText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              'czbndc1p' /* Username */,
+                                              'euf90tnb' /* Username */,
                                             ),
                                             labelStyle:
                                                 FlutterFlowTheme.of(context)
@@ -441,7 +441,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             hintText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              'n416xf6a' /* Enter your name... */,
+                                              'nwsqmacn' /* Enter your name... */,
                                             ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
@@ -516,7 +516,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             labelText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              'rp70k3sq' /* Email Address */,
+                                              'lmtcohco' /* Email Address */,
                                             ),
                                             labelStyle:
                                                 FlutterFlowTheme.of(context)
@@ -537,7 +537,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             hintText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              '9cobhteb' /* Enter your email... */,
+                                              'r9tk5fba' /* Enter your email... */,
                                             ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
@@ -615,7 +615,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             labelText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              'tp8ecg2o' /* Password */,
+                                              'iu2qfwvj' /* Password */,
                                             ),
                                             labelStyle:
                                                 FlutterFlowTheme.of(context)
@@ -623,7 +623,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             hintText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              'i6ygpd26' /* Enter your password... */,
+                                              'fp1cx4io' /* Enter your password... */,
                                             ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
@@ -718,7 +718,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             labelText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              '0be96sl3' /* Password confirmation */,
+                                              'v4v80t1p' /* Password confirmation */,
                                             ),
                                             labelStyle:
                                                 FlutterFlowTheme.of(context)
@@ -726,7 +726,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                             hintText:
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                              'dx25okby' /* Enter your password again... */,
+                                              'f7guul2b' /* Enter your password again... */,
                                             ),
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
@@ -863,7 +863,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            '0ooqd46b' /* Create Account */,
+                                            'ozyz1x0a' /* Create Account */,
                                           ),
                                           options: FFButtonOptions(
                                             width: 230.0,

@@ -122,71 +122,71 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Login
   {
-    '9ejws23w': {
+    '74b2rf2r': {
       'en': 'Sign In',
       'vi': '',
     },
-    'rbeta6ig': {
+    'cyo82ik4': {
       'en': 'Email Address',
       'vi': '',
     },
-    'mdqw2idw': {
+    '550pbepm': {
       'en': 'Enter your email...',
       'vi': '',
     },
-    'glp8h9jc': {
+    'mh7i0hwk': {
       'en': 'Password',
       'vi': '',
     },
-    'd9e32qm7': {
+    '95km7aeh': {
       'en': 'Enter your password...',
       'vi': '',
     },
-    'dsojfei5': {
+    'x4oykfp1': {
       'en': 'Sign In',
       'vi': '',
     },
-    '911288z6': {
+    'qvmv3nwj': {
       'en': 'Forgot Password?',
       'vi': '',
     },
-    'fipl2a5c': {
+    'izxu5k5r': {
       'en': 'Sign Up',
       'vi': '',
     },
-    'czbndc1p': {
+    'euf90tnb': {
       'en': 'Username',
       'vi': '',
     },
-    'n416xf6a': {
+    'nwsqmacn': {
       'en': 'Enter your name...',
       'vi': '',
     },
-    'rp70k3sq': {
+    'lmtcohco': {
       'en': 'Email Address',
       'vi': '',
     },
-    '9cobhteb': {
+    'r9tk5fba': {
       'en': 'Enter your email...',
       'vi': '',
     },
-    'tp8ecg2o': {
+    'iu2qfwvj': {
       'en': 'Password',
       'vi': '',
     },
-    'i6ygpd26': {
+    'fp1cx4io': {
       'en': 'Enter your password...',
       'vi': '',
     },
-    '0be96sl3': {
+    'v4v80t1p': {
       'en': 'Password confirmation',
       'vi': '',
     },
-    'dx25okby': {
+    'f7guul2b': {
       'en': 'Enter your password again...',
       'vi': '',
     },
-    '0ooqd46b': {
+    'ozyz1x0a': {
       'en': 'Create Account',
       'vi': '',
     },
@@ -410,6 +410,43 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': '',
     },
     'gr3j4f98': {
+      'en': 'Home',
+      'vi': '',
+    },
+  },
+  // Onboarding
+  {
+    'k8cu326x': {
+      'en': 'Welcome to TechBurst!',
+      'vi': '',
+    },
+    'ic8ja69k': {
+      'en':
+          'Connect with trusted sellers and buyers to exchange refurbished electronic product',
+      'vi': '',
+    },
+    'o12r8xtt': {
+      'en': 'Scan and verify',
+      'vi': '',
+    },
+    '5qhiv4hb': {
+      'en':
+          'Use our built-in scanner to verify the authenticity of refurbished products',
+      'vi': '',
+    },
+    'wj80hvol': {
+      'en': 'Reduce Waste',
+      'vi': 'Hướng tới phong cách sống 5’Rs',
+    },
+    'xp3e4hb9': {
+      'en': 'Refuse, Reduce, Reuse, Repurpose, and Recycle',
+      'vi': '',
+    },
+    'r07q5hx9': {
+      'en': 'Get Started',
+      'vi': '',
+    },
+    '4t2i2lec': {
       'en': 'Home',
       'vi': '',
     },
