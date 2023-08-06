@@ -1,4 +1,5 @@
 # refurbished-marketplace
+![Platform Logo](./assets/images/app_launcher_icon.png)
 
 ## Project Description
 The C2C Ecommerce Platform is designed to provide a marketplace for users to buy and sell refurbished products. It offers an added layer of security by integrating a Teachable Machine model to detect counterfeit products. The platform emphasizes user trust and transactions in a peer-to-peer environment.
