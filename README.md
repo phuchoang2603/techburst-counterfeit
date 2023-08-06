@@ -1,5 +1,4 @@
-# Refurbished C2C Ecommerce Platform - README
-![Platform Logo](./assets/images/app_launcher_icon.png)
+# refurbished-marketplace
 
 ## Project Description
 The C2C Ecommerce Platform is designed to provide a marketplace for users to buy and sell refurbished products. It offers an added layer of security by integrating a Teachable Machine model to detect counterfeit products. The platform emphasizes user trust and transactions in a peer-to-peer environment.
@@ -29,21 +28,18 @@ The technologies used in this project include:
 - [Flask Backend Server Repository](https://github.com/phuchoang2603/teachable-machine-flask-API-server): The repository link for the Flask backend server that handles the Teachable Machine model.
 
 ## Getting Started
-To get started with this Flutter project, follow these steps:
-1. Clone the repository to your local machine:
-`git clone https://github.com/username/repository.git`
-2. Install Flutter by following the official Flutter installation guide: [Flutter Install Guide](https://docs.flutter.dev/get-started/install)
-3. Open the project in your preferred IDE (e.g., Android Studio, VS Code).
-4. Install dependencies by running the following command in the project directory:
-`flutter pub get`
-5. Run the application using the following command:
-`flutter run`
-Congratulations! You have successfully set up the Flutter project created with FlutterFlow.
 
-## Resources
-- [Flutter Documentation](https://flutter.dev/docs)
-- [Firestore Documentation](https://firebase.google.com/docs/firestore)
-- [imgBB Documentation](https://api.imgbb.com/)
-- [Flask Documentation](https://flask.palletsprojects.com/)
+FlutterFlow projects are built to run on the Flutter _stable_ release.
 
-For additional guidance and support, refer to the documentation provided by the respective technologies.
+### Getting started continued:
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
