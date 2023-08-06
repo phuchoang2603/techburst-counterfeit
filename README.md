@@ -19,6 +19,7 @@ To use the app, you can download the APK file from the [Releases](https://github
 ### Future Features of the Project:
 - [ ] Auction System: Implement an auction system to allow users to bid on products and sellers to set a minimum price.
 - [ ] Transaction Management: Allow users to manage their transactions, including payments, shipping, and delivery.
+- [ ] Live map: Enable users to view the location of products and sellers on a map to facilitate local transactions.
 - [ ] Product Recommendations: Implement a recommendation system to suggest products based on user preferences and interests.
 - [ ] Virtual assistant chatbot: Enable users to interact with a chatbot to get answers to their questions and resolve issues.
 - [ ] Custom model training: Enable users to train their own Teachable Machine model to detect counterfeit products.
