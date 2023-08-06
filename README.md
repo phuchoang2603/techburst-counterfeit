@@ -5,6 +5,9 @@ The C2C Ecommerce Platform is designed to provide a marketplace for users to buy
 
 The platform is built using FlutterFlow, a low-code Flutter framework that enables users to build Flutter applications visually. It also utilizes various technologies such as Firestore, imgBB, and a REST API call to a [Flask backend server](https://github.com/phuchoang2603/teachable-machine-flask-API-server) that handles the Teachable Machine model.
 
+To use the app, you can download the APK file from the [Releases](https://github.com/phuchoang2603/techburst-counterfeit/releases/tag/10) page and install it on your Android device. Alternatively, you can clone the repository and run the app on your local machine (see [Getting Started](#getting-started) for more details).
+
+## Project Features
 ### Current Features of the Project:
 - User Registration and Authentication: Allow users to create accounts, login, and manage their profile information.
 - Product Listings: Enable users to list their refurbished products for sale, including details like images, descriptions, and pricing.
@@ -28,18 +31,21 @@ The technologies used in this project include:
 - [Flask Backend Server Repository](https://github.com/phuchoang2603/teachable-machine-flask-API-server): The repository link for the Flask backend server that handles the Teachable Machine model.
 
 ## Getting Started
+To get started with this Flutter project, follow these steps:
+1. Clone the repository to your local machine:
+`git clone https://github.com/username/repository.git`
+2. Install Flutter by following the official Flutter installation guide: [Flutter Install Guide](https://docs.flutter.dev/get-started/install)
+3. Open the project in your preferred IDE (e.g., Android Studio, VS Code).
+4. Install dependencies by running the following command in the project directory:
+`flutter pub get`
+5. Run the application using the following command:
+`flutter run`
+Congratulations! You have successfully set up the Flutter project created with FlutterFlow.
 
-FlutterFlow projects are built to run on the Flutter _stable_ release.
+## Resources
+- [Flutter Documentation](https://flutter.dev/docs)
+- [Firestore Documentation](https://firebase.google.com/docs/firestore)
+- [imgBB Documentation](https://api.imgbb.com/)
+- [Flask Documentation](https://flask.palletsprojects.com/)
 
-### Getting started continued:
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+For additional guidance and support, refer to the documentation provided by the respective technologies.
