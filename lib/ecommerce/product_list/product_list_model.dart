@@ -11,7 +11,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:text_search/text_search.dart';
 
-class HomeModel extends FlutterFlowModel {
+class ProductListModel extends FlutterFlowModel {
   ///  Local state fields for this page.
 
   bool searchBool = true;
