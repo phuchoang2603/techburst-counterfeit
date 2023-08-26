@@ -105,7 +105,7 @@ Locale createLocale(String language) => language.contains('_')
     : Locale(language);
 
 final kTranslationsMap = <Map<String, Map<String, String>>>[
-  // Home
+  // ProductList
   {
     'byaxrx03': {
       'en': 'Search products...',
@@ -144,10 +144,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'x4oykfp1': {
       'en': 'Sign In',
-      'vi': '',
-    },
-    'qvmv3nwj': {
-      'en': 'Forgot Password?',
       'vi': '',
     },
     'izxu5k5r': {
@@ -195,10 +191,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': '',
     },
   },
-  // Scanner
+  // DirectScanner
   {
     'gqvz7r9z': {
       'en': 'Upload Image',
+      'vi': '',
+    },
+    '6o788c6f': {
+      'en': 'Please upload the image file of the product',
       'vi': '',
     },
     'gxk9whgf': {
@@ -206,11 +206,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': '',
     },
     '1t1f66x8': {
-      'en': 'Scanner',
+      'en': 'Direct Scanner',
       'vi': '',
     },
     '6tptbsdv': {
-      'en': 'Scanner',
+      'en': 'Direct Scan',
       'vi': '',
     },
   },
@@ -402,7 +402,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // ResultPage
   {
     '4utsxuvg': {
-      'en': 'Go Home',
+      'en': 'Go Back',
       'vi': '',
     },
     '2qmnogww': {
@@ -448,6 +448,29 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '4t2i2lec': {
       'en': 'Home',
+      'vi': '',
+    },
+  },
+  // ResultHelper
+  {
+    'cvnl95cv': {
+      'en': 'Upload Image',
+      'vi': '',
+    },
+    'osj0rosp': {
+      'en': 'Please upload the image of the product\'s barcode',
+      'vi': '',
+    },
+    'fbj1b4qz': {
+      'en': 'Search Results',
+      'vi': '',
+    },
+    '75humjhk': {
+      'en': 'Barcode Scanner',
+      'vi': '',
+    },
+    'fpzo3517': {
+      'en': 'Barcode Scan',
       'vi': '',
     },
   },

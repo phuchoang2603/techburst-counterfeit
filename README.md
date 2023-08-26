@@ -1,6 +1,8 @@
 # Counterfeit Product Detection using Teachable Machine and Barcode Scanner
 ![Platform Logo](./assets/images/light.png)
 
+You can download the app on the [Release page(https://github.com/phuchoang2603/techburst-counterfeit/releases)]
+
 ## Project Description
 
 The Counterfeit Product Detection project aims to provide users with a reliable solution to identify counterfeit products. Originally designed as a C2C Ecommerce Platform, the project has evolved to focus solely on counterfeit detection. The system offers two methods for users to verify product authenticity: utilizing a Teachable Machine model and employing a barcode scanner.
@@ -36,28 +38,6 @@ To address the limitations of the Teachable Machine model, the project now facil
 - **PyZbar**: A Python library for barcode scanning.
 
 - **ChatGPT (Language Model)**: Utilized for intelligent information retrieval and summarization from online sources.
-
-# Getting Started
-
-To get started with this Flutter project, follow these steps:
-
-1. Clone the repository to your local machine:
-
-`git clone https://github.com/username/repository.git`
-
-2. Install Flutter by following the official Flutter installation guide: [Flutter Install Guide](https://docs.flutter.dev/get-started/install)
-
-3. Open the project in your preferred IDE (e.g., Android Studio, VS Code).
-
-4. Install dependencies by running the following command in the project directory:
-
-`flutter pub get`
-
-5. Run the application using the following command:
-
-`flutter run`
-
-Congratulations! You have successfully set up the Flutter project created with FlutterFlow.
 
 ## Future Enhancements
 

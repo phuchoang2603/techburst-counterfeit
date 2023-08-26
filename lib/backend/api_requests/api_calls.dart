@@ -65,6 +65,47 @@ class ImgBBCall {
       );
 }
 
+class BarcodeScannerCall {
+  static Future<ApiCallResponse> call({
+    String? url = '',
+  }) {
+    return ApiManager.instance.makeApiCall(
+      callName: 'barcodeScanner',
+      apiUrl: 'https://hammerhead-app-qlv3d.ondigitalocean.app/?url=${url}',
+      callType: ApiCallType.POST,
+      headers: {},
+      params: {},
+      bodyType: BodyType.MULTIPART,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+    );
+  }
+
+  static dynamic barcode(dynamic response) => getJsonField(
+        response,
+        r'''$.product.barcode''',
+      );
+  static dynamic price(dynamic response) => getJsonField(
+        response,
+        r'''$.product.price''',
+      );
+  static dynamic publisher(dynamic response) => getJsonField(
+        response,
+        r'''$.product.publisher''',
+      );
+  static dynamic title(dynamic response) => getJsonField(
+        response,
+        r'''$.product.title''',
+      );
+  static dynamic searchresult(dynamic response) => getJsonField(
+        response,
+        r'''$.search_result''',
+        true,
+      );
+}
+
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;
