@@ -1,9 +1,5 @@
-# refurbished-marketplace
-![Platform Logo](./assets/images/light.png)
-
 # Counterfeit Product Detection using Teachable Machine and Barcode Scanner
-
-![Project Logo](project_logo.png)
+![Platform Logo](./assets/images/light.png)
 
 ## Project Description
 
@@ -14,11 +10,11 @@ The Teachable Machine model was previously used to detect counterfeit products; 
 ## Detection Methods
 
 ### 1. Teachable Machine Model
-
+- github repo: https://github.com/phuchoang2603/teachable-machine-flask-API-server
 The Teachable Machine model, while effective, faced challenges in recognizing all counterfeit products due to inherent limitations in machine learning's ability to identify specific areas of manipulation. To optimize this, the project has shifted towards empowering users with the knowledge to identify counterfeit products themselves. Instead of relying solely on the machine learning model, users are guided through a process to manually inspect and verify products using provided instructions.
 
-### 2. Barcode Scanner with PyZbar
-
+### 2. Barcode Scanner with PyZbar 
+- github repo: https://github.com/phuchoang2603/ocr-langchain
 To provide users with an efficient and reliable means of counterfeit detection, the project has integrated the PyZbar library for barcode scanning. Users can now scan the barcode or product number using their smartphone's camera. The scanned data is then processed to extract product information.
 
 ## Optimization Strategies
