@@ -1,53 +1,88 @@
 # refurbished-marketplace
 ![Platform Logo](./assets/images/light.png)
 
+# Counterfeit Product Detection using Teachable Machine and Barcode Scanner
+
+![Project Logo](project_logo.png)
+
 ## Project Description
-The C2C Ecommerce Platform is designed to provide a marketplace for users to buy and sell refurbished products. It offers an added layer of security by integrating a Teachable Machine model to detect counterfeit products. The platform emphasizes user trust and transactions in a peer-to-peer environment.
 
-The platform is built using FlutterFlow, a low-code Flutter framework that enables users to build Flutter applications visually. It also utilizes various technologies such as Firestore, imgBB, and a REST API call to a [Flask backend server](https://github.com/phuchoang2603/teachable-machine-flask-API-server) that handles the Teachable Machine model.
+The Counterfeit Product Detection project aims to provide users with a reliable solution to identify counterfeit products. Originally designed as a C2C Ecommerce Platform, the project has evolved to focus solely on counterfeit detection. The system offers two methods for users to verify product authenticity: utilizing a Teachable Machine model and employing a barcode scanner.
 
-To use the app, you can download the APK file from the [Releases](https://github.com/phuchoang2603/techburst-counterfeit/releases/tag/10) page and install it on your Android device. Alternatively, you can clone the repository and run the app on your local machine (see [Getting Started](#getting-started) for more details).
+The Teachable Machine model was previously used to detect counterfeit products; however, it had limitations in terms of accuracy and scalability. The model couldn't achieve 100% recognition due to the challenges of pinpointing falsified information, and its scalability was hindered by the availability of limited data resources. In response, the project has undergone optimization to enhance user experience and detection accuracy.
 
-## Project Features
-### Current Features of the Project:
-- User Registration and Authentication: Allow users to create accounts, login, and manage their profile information.
-- Product Listings: Enable users to list their refurbished products for sale, including details like images, descriptions, and pricing.
-- Product Search: Implement a search functionality to allow users to discover products based on keywords, categories, or other filters.
-- Ratings and Reviews: Enable users to rate and review products and sellers, promoting transparency and accountability.
-- Counterfeit Detection: Utilize a Teachable Machine model to automatically verify the authenticity of listed products.
+## Detection Methods
 
-### Future Features of the Project:
-- [ ] Auction System: Implement an auction system to allow users to bid on products and sellers to set a minimum price.
-- [ ] Transaction Management: Allow users to manage their transactions, including payments, shipping, and delivery.
-- [ ] Live map: Enable users to view the location of products and sellers on a map to facilitate local transactions.
-- [ ] Product Recommendations: Implement a recommendation system to suggest products based on user preferences and interests.
-- [ ] Virtual assistant chatbot: Enable users to interact with a chatbot to get answers to their questions and resolve issues.
-- [ ] Custom model training: Enable users to train their own Teachable Machine model to detect counterfeit products.
+### 1. Teachable Machine Model
+
+The Teachable Machine model, while effective, faced challenges in recognizing all counterfeit products due to inherent limitations in machine learning's ability to identify specific areas of manipulation. To optimize this, the project has shifted towards empowering users with the knowledge to identify counterfeit products themselves. Instead of relying solely on the machine learning model, users are guided through a process to manually inspect and verify products using provided instructions.
+
+### 2. Barcode Scanner with PyZbar
+
+To provide users with an efficient and reliable means of counterfeit detection, the project has integrated the PyZbar library for barcode scanning. Users can now scan the barcode or product number using their smartphone's camera. The scanned data is then processed to extract product information.
+
+## Optimization Strategies
+
+To address the limitations of the Teachable Machine model, the project now facilitates user interaction and education. The optimization strategies include:
+
+- **Empowering Users**: Users are provided with detailed instructions on how to physically inspect products to determine authenticity. This approach leverages human expertise and ensures accurate detection.
+
+- **Barcode Scanning**: The integration of PyZbar allows users to quickly gather product information from barcodes. This data is used to retrieve relevant information about the product's authenticity.
+
+- **Intelligent Information Retrieval**: The scanned barcode or product number is utilized to perform intelligent web searches using a language model (e.g., ChatGPT). The model identifies reputable sources based on factors like view count and credibility.
+
+- **Summarization**: Information from online sources is summarized to provide users with concise and relevant details about the product's authenticity.
 
 ## Technologies Used
-The technologies used in this project include:
 
-- Firestore: A flexible, scalable NoSQL database for storing and managing user data, product listings, and transactions.
-- imgBB: An image hosting service to store product images securely and retrieve them when needed.
-- REST API: Utilize a REST API call to a Flask backend server that handles the Teachable Machine model. The backend server processes the image data and returns the results for counterfeit detection.
-- [Flask Backend Server Repository](https://github.com/phuchoang2603/teachable-machine-flask-API-server): The repository link for the Flask backend server that handles the Teachable Machine model.
+- **Teachable Machine**: The initial machine learning model used for counterfeit detection.
 
-## Getting Started
+- **PyZbar**: A Python library for barcode scanning.
+
+- **ChatGPT (Language Model)**: Utilized for intelligent information retrieval and summarization from online sources.
+
+# Getting Started
+
 To get started with this Flutter project, follow these steps:
+
 1. Clone the repository to your local machine:
+
 `git clone https://github.com/username/repository.git`
+
 2. Install Flutter by following the official Flutter installation guide: [Flutter Install Guide](https://docs.flutter.dev/get-started/install)
+
 3. Open the project in your preferred IDE (e.g., Android Studio, VS Code).
+
 4. Install dependencies by running the following command in the project directory:
+
 `flutter pub get`
+
 5. Run the application using the following command:
+
 `flutter run`
+
 Congratulations! You have successfully set up the Flutter project created with FlutterFlow.
 
+## Future Enhancements
+
+While the project has undergone significant optimization, there are still opportunities for further development:
+
+- **Continuous Learning**: Implement a feedback mechanism that allows users to contribute to the system's learning process.
+
+- **Expanded Barcode Database**: Enrich the barcode database to cover a wider range of products for more accurate detection.
+
+- **Real-time Collaboration**: Enable users to collaborate in real time, sharing insights and assisting each other in product verification.
+
+- **Enhanced User Guidance**: Further improve the guidance provided to users for accurate and efficient manual verification.
+
 ## Resources
+
 - [Flutter Documentation](https://flutter.dev/docs)
 - [Firestore Documentation](https://firebase.google.com/docs/firestore)
 - [imgBB Documentation](https://api.imgbb.com/)
 - [Flask Documentation](https://flask.palletsprojects.com/)
+- [Teachable Machine](https://teachablemachine.withgoogle.com/)
+- [PyZbar Documentation](https://github.com/NaturalHistoryMuseum/pyzbar)
+- [OpenAI's ChatGPT](https://platform.openai.com/docs/guides/chat)
 
-For additional guidance and support, refer to the documentation provided by the respective technologies.
+For more information and support, refer to the documentation provided for each technology.
