@@ -10,18 +10,19 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:text_search/text_search.dart';
-import 'home_model.dart';
-export 'home_model.dart';
+import 'product_list_model.dart';
+export 'product_list_model.dart';
 
-class HomeWidget extends StatefulWidget {
-  const HomeWidget({Key? key}) : super(key: key);
+class ProductListWidget extends StatefulWidget {
+  const ProductListWidget({Key? key}) : super(key: key);
 
   @override
-  _HomeWidgetState createState() => _HomeWidgetState();
+  _ProductListWidgetState createState() => _ProductListWidgetState();
 }
 
-class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
-  late HomeModel _model;
+class _ProductListWidgetState extends State<ProductListWidget>
+    with TickerProviderStateMixin {
+  late ProductListModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -79,7 +80,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => HomeModel());
+    _model = createModel(context, () => ProductListModel());
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
@@ -113,14 +114,14 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                 height: 50.0,
                 child: CircularProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(
-                    FlutterFlowTheme.of(context).primary,
+                    FlutterFlowTheme.of(context).secondary,
                   ),
                 ),
               ),
             ),
           );
         }
-        List<ProductsRecord> homeProductsRecordList = snapshot.data!;
+        List<ProductsRecord> productListProductsRecordList = snapshot.data!;
         return GestureDetector(
           onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
           child: Scaffold(
@@ -183,7 +184,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                               if (textEditingValue.text == '') {
                                 return const Iterable<String>.empty();
                               }
-                              return homeProductsRecordList
+                              return productListProductsRecordList
                                   .map((e) => e.name)
                                   .toList()
                                   .where((option) {
@@ -350,7 +351,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                               16.0, 16.0, 16.0, 0.0),
                           child: Builder(
                             builder: (context) {
-                              final latest = homeProductsRecordList
+                              final latest = productListProductsRecordList
                                   .where((e) =>
                                       (e.sellerId != currentUserReference) &&
                                       (e.isSelling == true))

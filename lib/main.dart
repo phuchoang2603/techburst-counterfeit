@@ -90,8 +90,14 @@ class _MyAppState extends State<MyApp> {
         Locale('en'),
         Locale('vi'),
       ],
-      theme: ThemeData(brightness: Brightness.light),
-      darkTheme: ThemeData(brightness: Brightness.dark),
+      theme: ThemeData(
+        brightness: Brightness.light,
+        scrollbarTheme: ScrollbarThemeData(),
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        scrollbarTheme: ScrollbarThemeData(),
+      ),
       themeMode: _themeMode,
       routerConfig: _router,
     );
@@ -110,7 +116,7 @@ class NavBarPage extends StatefulWidget {
 
 /// This is the private State class that goes with NavBarPage.
 class _NavBarPageState extends State<NavBarPage> {
-  String _currentPageName = 'Home';
+  String _currentPageName = 'DirectScanner';
   late Widget? _currentPage;
 
   @override
@@ -123,9 +129,8 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
-      'Home': HomeWidget(),
-      'Scanner': ScannerWidget(),
-      'SellerDashboard': SellerDashboardWidget(),
+      'DirectScanner': DirectScannerWidget(),
+      'ResultHelper': ResultHelperWidget(),
       'Profile': ProfileWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
@@ -147,11 +152,11 @@ class _NavBarPageState extends State<NavBarPage> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home_rounded,
+              Icons.compare_rounded,
               size: 24.0,
             ),
             label: FFLocalizations.of(context).getText(
-              '0vrypyyq' /* Home */,
+              '6tptbsdv' /* Direct Scan */,
             ),
             tooltip: '',
           ),
@@ -161,17 +166,7 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 24.0,
             ),
             label: FFLocalizations.of(context).getText(
-              '6tptbsdv' /* Scanner */,
-            ),
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.attach_money_rounded,
-              size: 24.0,
-            ),
-            label: FFLocalizations.of(context).getText(
-              'y0vl6clw' /* Sell */,
+              'fpzo3517' /* Barcode Scan */,
             ),
             tooltip: '',
           ),

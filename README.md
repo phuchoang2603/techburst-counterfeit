@@ -1,9 +1,5 @@
-# refurbished-marketplace
-![Platform Logo](./assets/images/light.png)
-
 # Counterfeit Product Detection using Teachable Machine and Barcode Scanner
-
-![Project Logo](project_logo.png)
+![Platform Logo](./assets/images/light.png)
 
 ## Project Description
 
