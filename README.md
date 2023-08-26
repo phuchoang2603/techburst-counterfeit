@@ -1,7 +1,7 @@
 # Counterfeit Product Detection using Teachable Machine and Barcode Scanner
 ![Platform Logo](./assets/images/light.png)
 
-You can download the app on the [Release page(https://github.com/phuchoang2603/techburst-counterfeit/releases)]
+You can download the app on the [Release page](https://github.com/phuchoang2603/techburst-counterfeit/releases)
 
 ## Project Description
 
