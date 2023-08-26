@@ -206,7 +206,7 @@ class _ProductDetailWidgetState extends State<ProductDetailWidget>
                 height: 50.0,
                 child: CircularProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(
-                    FlutterFlowTheme.of(context).primary,
+                    FlutterFlowTheme.of(context).secondary,
                   ),
                 ),
               ),
@@ -313,7 +313,7 @@ class _ProductDetailWidgetState extends State<ProductDetailWidget>
                                               valueColor:
                                                   AlwaysStoppedAnimation<Color>(
                                                 FlutterFlowTheme.of(context)
-                                                    .primary,
+                                                    .secondary,
                                               ),
                                             ),
                                           ),
@@ -357,7 +357,7 @@ class _ProductDetailWidgetState extends State<ProductDetailWidget>
                                                       AlwaysStoppedAnimation<
                                                           Color>(
                                                     FlutterFlowTheme.of(context)
-                                                        .primary,
+                                                        .secondary,
                                                   ),
                                                 ),
                                               ),
@@ -399,7 +399,7 @@ class _ProductDetailWidgetState extends State<ProductDetailWidget>
                                                       AlwaysStoppedAnimation<
                                                           Color>(
                                                     FlutterFlowTheme.of(context)
-                                                        .primary,
+                                                        .secondary,
                                                   ),
                                                 ),
                                               ),

@@ -87,10 +87,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               appStateNotifier.loggedIn ? NavBarPage() : OnboardingWidget(),
         ),
         FFRoute(
-          name: 'Home',
-          path: '/home',
-          builder: (context, params) =>
-              params.isEmpty ? NavBarPage(initialPage: 'Home') : HomeWidget(),
+          name: 'ProductList',
+          path: '/productList',
+          builder: (context, params) => ProductListWidget(),
         ),
         FFRoute(
           name: 'Login',
@@ -98,11 +97,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => LoginWidget(),
         ),
         FFRoute(
-          name: 'Scanner',
-          path: '/scanner',
+          name: 'DirectScanner',
+          path: '/directScanner',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Scanner')
-              : ScannerWidget(),
+              ? NavBarPage(initialPage: 'DirectScanner')
+              : DirectScannerWidget(),
         ),
         FFRoute(
           name: 'Profile',
@@ -132,9 +131,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'SellerDashboard',
           path: '/sellerDashboard',
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'SellerDashboard')
-              : SellerDashboardWidget(),
+          builder: (context, params) => SellerDashboardWidget(),
         ),
         FFRoute(
           name: 'EditProduct',
@@ -164,6 +161,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Onboarding',
           path: '/onboarding',
           builder: (context, params) => OnboardingWidget(),
+        ),
+        FFRoute(
+          name: 'ResultHelper',
+          path: '/resultHelper',
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'ResultHelper')
+              : ResultHelperWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

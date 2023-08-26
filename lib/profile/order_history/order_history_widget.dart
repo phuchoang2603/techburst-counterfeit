@@ -101,7 +101,7 @@ class _OrderHistoryWidgetState extends State<OrderHistoryWidget> {
                             height: 50.0,
                             child: CircularProgressIndicator(
                               valueColor: AlwaysStoppedAnimation<Color>(
-                                FlutterFlowTheme.of(context).primary,
+                                FlutterFlowTheme.of(context).secondary,
                               ),
                             ),
                           ),
@@ -137,7 +137,7 @@ class _OrderHistoryWidgetState extends State<OrderHistoryWidget> {
                                     height: 50.0,
                                     child: CircularProgressIndicator(
                                       valueColor: AlwaysStoppedAnimation<Color>(
-                                        FlutterFlowTheme.of(context).primary,
+                                        FlutterFlowTheme.of(context).secondary,
                                       ),
                                     ),
                                   ),
@@ -221,7 +221,7 @@ class _OrderHistoryWidgetState extends State<OrderHistoryWidget> {
                                                                   Color>(
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .primary,
+                                                                .secondary,
                                                           ),
                                                         ),
                                                       ),

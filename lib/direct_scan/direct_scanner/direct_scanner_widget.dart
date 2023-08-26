@@ -6,25 +6,25 @@ import '/flutter_flow/upload_data.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'scanner_model.dart';
-export 'scanner_model.dart';
+import 'direct_scanner_model.dart';
+export 'direct_scanner_model.dart';
 
-class ScannerWidget extends StatefulWidget {
-  const ScannerWidget({Key? key}) : super(key: key);
+class DirectScannerWidget extends StatefulWidget {
+  const DirectScannerWidget({Key? key}) : super(key: key);
 
   @override
-  _ScannerWidgetState createState() => _ScannerWidgetState();
+  _DirectScannerWidgetState createState() => _DirectScannerWidgetState();
 }
 
-class _ScannerWidgetState extends State<ScannerWidget> {
-  late ScannerModel _model;
+class _DirectScannerWidgetState extends State<DirectScannerWidget> {
+  late DirectScannerModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ScannerModel());
+    _model = createModel(context, () => DirectScannerModel());
   }
 
   @override
@@ -46,7 +46,7 @@ class _ScannerWidgetState extends State<ScannerWidget> {
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
-              '1t1f66x8' /* Scanner */,
+              '1t1f66x8' /* Direct Scanner */,
             ),
             style: FlutterFlowTheme.of(context).displaySmall.override(
                   fontFamily: FlutterFlowTheme.of(context).displaySmallFamily,
@@ -206,6 +206,16 @@ class _ScannerWidgetState extends State<ScannerWidget> {
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                      child: Text(
+                        FFLocalizations.of(context).getText(
+                          '6o788c6f' /* Please upload the image file o... */,
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyMedium,
                       ),
                     ),
                   ],
