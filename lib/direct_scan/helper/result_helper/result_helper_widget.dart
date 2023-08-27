@@ -484,7 +484,11 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
                                                 ),
                                               );
                                               _model.apiResultVoice =
-                                                  await TexttospeechCall.call();
+                                                  await TexttospeechCall.call(
+                                                text: (_model.apiResultmxf
+                                                        ?.bodyText ??
+                                                    ''),
+                                              );
                                               if ((_model.apiResultVoice
                                                       ?.succeeded ??
                                                   true)) {
@@ -580,7 +584,7 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
                                                   ''),
                                             ),
                                             metas: Metas(
-                                              id: 'sample3.mp3-00db7bfd',
+                                              id: '2vqf7_-00db7bfd',
                                               title: 'Voice',
                                             ),
                                           ),
