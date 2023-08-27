@@ -31,7 +31,7 @@ class ResultHelperModel extends FlutterFlowModel {
   ApiCallResponse? apiResultBarcode;
   // Stores action output result for [Backend Call - API (flowise)] action in Button widget.
   ApiCallResponse? apiResultmxf;
-  // Stores action output result for [Backend Call - API (viettelai)] action in Button widget.
+  // Stores action output result for [Backend Call - API (texttospeech)] action in Button widget.
   ApiCallResponse? apiResultVoice;
 
   /// Initialization and disposal methods.

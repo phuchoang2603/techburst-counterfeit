@@ -160,6 +160,32 @@ class ViettelaiCall {
   }
 }
 
+class TexttospeechCall {
+  static Future<ApiCallResponse> call({
+    String? text = '',
+  }) {
+    return ApiManager.instance.makeApiCall(
+      callName: 'texttospeech',
+      apiUrl: 'https://hammerhead-app-2-5iaez.ondigitalocean.app/',
+      callType: ApiCallType.POST,
+      headers: {},
+      params: {
+        'text': text,
+      },
+      bodyType: BodyType.MULTIPART,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+    );
+  }
+
+  static dynamic audio(dynamic response) => getJsonField(
+        response,
+        r'''$.url''',
+      );
+}
+
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;

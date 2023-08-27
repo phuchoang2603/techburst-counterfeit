@@ -483,11 +483,7 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
                                                 ),
                                               );
                                               _model.apiResultVoice =
-                                                  await ViettelaiCall.call(
-                                                text: (_model.apiResultmxf
-                                                        ?.bodyText ??
-                                                    ''),
-                                              );
+                                                  await TexttospeechCall.call();
                                               if ((_model.apiResultVoice
                                                       ?.succeeded ??
                                                   true)) {
@@ -573,9 +569,13 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
                                     children: [
                                       FlutterFlowAudioPlayer(
                                         audio: Audio.network(
-                                          'https://filesamples.com/samples/audio/mp3/sample3.mp3',
+                                          TexttospeechCall.audio(
+                                            (_model.apiResultVoice?.jsonBody ??
+                                                ''),
+                                          ),
                                           metas: Metas(
                                             id: 'sample3.mp3-00db7bfd',
+                                            title: 'Voice',
                                           ),
                                         ),
                                         titleTextStyle:
