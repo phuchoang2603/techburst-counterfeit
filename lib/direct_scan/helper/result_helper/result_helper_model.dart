@@ -1,5 +1,6 @@
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_audio_player.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -15,6 +16,8 @@ class ResultHelperModel extends FlutterFlowModel {
 
   bool barcodeSuccess = false;
 
+  bool gptSuccess = false;
+
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
@@ -28,6 +31,8 @@ class ResultHelperModel extends FlutterFlowModel {
   ApiCallResponse? apiResultBarcode;
   // Stores action output result for [Backend Call - API (flowise)] action in Button widget.
   ApiCallResponse? apiResultmxf;
+  // Stores action output result for [Backend Call - API (viettelai)] action in Button widget.
+  ApiCallResponse? apiResultVoice;
 
   /// Initialization and disposal methods.
 

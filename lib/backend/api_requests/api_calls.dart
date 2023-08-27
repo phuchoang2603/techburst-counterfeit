@@ -131,6 +131,35 @@ class FlowiseCall {
   }
 }
 
+class ViettelaiCall {
+  static Future<ApiCallResponse> call({
+    String? text = '',
+  }) {
+    final body = '''
+{
+  "text": "${text}",
+  "voice": "hcm-diemmy",
+  "speed": 1,
+  "tts_return_option": 3,
+  "token": "78513ac98aba28746c6726732b0510b5",
+  "without_filter": false
+}''';
+    return ApiManager.instance.makeApiCall(
+      callName: 'viettelai',
+      apiUrl: 'https://viettelai.vn/tts/speech_synthesis',
+      callType: ApiCallType.POST,
+      headers: {},
+      params: {},
+      body: body,
+      bodyType: BodyType.JSON,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+    );
+  }
+}
+
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;
