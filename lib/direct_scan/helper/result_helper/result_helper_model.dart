@@ -25,7 +25,9 @@ class ResultHelperModel extends FlutterFlowModel {
   // Stores action output result for [Backend Call - API (imgBB)] action in Button widget.
   ApiCallResponse? imgBB;
   // Stores action output result for [Backend Call - API (barcodeScanner)] action in Button widget.
-  ApiCallResponse? apiResultb0p;
+  ApiCallResponse? apiResultBarcode;
+  // Stores action output result for [Backend Call - API (flowise)] action in Button widget.
+  ApiCallResponse? apiResultmxf;
 
   /// Initialization and disposal methods.
 

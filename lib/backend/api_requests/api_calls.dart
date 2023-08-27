@@ -106,6 +106,31 @@ class BarcodeScannerCall {
       );
 }
 
+class FlowiseCall {
+  static Future<ApiCallResponse> call({
+    String? product = '',
+  }) {
+    final body = '''
+{
+  "question": "Lam the nao de phan biet ${product}, tra loi theo ngon ngu Tieng Viet"
+}''';
+    return ApiManager.instance.makeApiCall(
+      callName: 'flowise',
+      apiUrl:
+          'https://flowiseai-railway-production-8552.up.railway.app/api/v1/prediction/0efdbd64-069c-4c09-8e9d-649a78bed67a',
+      callType: ApiCallType.POST,
+      headers: {},
+      params: {},
+      body: body,
+      bodyType: BodyType.JSON,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+    );
+  }
+}
+
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;

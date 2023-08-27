@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'login_model.dart';
@@ -27,11 +26,6 @@ class _LoginWidgetState extends State<LoginWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => LoginModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      setDarkModeSetting(context, ThemeMode.light);
-    });
 
     _model.tabBarController = TabController(
       vsync: this,
@@ -464,21 +458,9 @@ class _LoginWidgetState extends State<LoginWidget>
                                               .getText(
                                             'lmtcohco' /* Email Address */,
                                           ),
-                                          labelStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMediumFamily,
-                                                color: Color(0xFF0F1113),
-                                                useGoogleFonts: GoogleFonts
-                                                        .asMap()
-                                                    .containsKey(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMediumFamily),
-                                              ),
+                                          labelStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodySmall,
                                           hintText: FFLocalizations.of(context)
                                               .getText(
                                             'r9tk5fba' /* Enter your email... */,

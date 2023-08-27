@@ -461,6 +461,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Please upload the image of the product\'s barcode',
       'vi': '',
     },
+    'gxk9whgf': {
+      'en': 'Summarize it',
+      'vi': '',
+    },
     'fbj1b4qz': {
       'en': 'Search Results',
       'vi': '',

@@ -268,7 +268,7 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
                                       FlutterFlowTheme.of(context).success,
                                 ),
                               );
-                              _model.apiResultb0p =
+                              _model.apiResultBarcode =
                                   await BarcodeScannerCall.call(
                                 url: ImgBBCall.imageUrl(
                                   (_model.imgBB?.jsonBody ?? ''),
@@ -288,7 +288,8 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
                                       FlutterFlowTheme.of(context).success,
                                 ),
                               );
-                              if ((_model.apiResultb0p?.succeeded ?? true)) {
+                              if ((_model.apiResultBarcode?.succeeded ??
+                                  true)) {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(
                                     content: Text(
@@ -395,7 +396,7 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
                         children: [
                           Text(
                             BarcodeScannerCall.title(
-                              (_model.apiResultb0p?.jsonBody ?? ''),
+                              (_model.apiResultBarcode?.jsonBody ?? ''),
                             ).toString(),
                             style: FlutterFlowTheme.of(context).displaySmall,
                           ).animateOnPageLoad(
@@ -405,7 +406,7 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
                                 0.0, 4.0, 0.0, 0.0),
                             child: Text(
                               BarcodeScannerCall.publisher(
-                                (_model.apiResultb0p?.jsonBody ?? ''),
+                                (_model.apiResultBarcode?.jsonBody ?? ''),
                               ).toString(),
                               style: FlutterFlowTheme.of(context).labelMedium,
                             ).animateOnPageLoad(
@@ -419,7 +420,7 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
                               animationsMap['dividerOnPageLoadAnimation']!),
                           Text(
                             'Price: ${BarcodeScannerCall.price(
-                              (_model.apiResultb0p?.jsonBody ?? ''),
+                              (_model.apiResultBarcode?.jsonBody ?? ''),
                             ).toString()} đ',
                             style: FlutterFlowTheme.of(context)
                                 .displaySmall
@@ -433,6 +434,91 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation3']!),
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 16.0, 0.0, 0.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Align(
+                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  child: FFButtonWidget(
+                                    onPressed: () async {
+                                      _model.apiResultmxf =
+                                          await FlowiseCall.call(
+                                        product: BarcodeScannerCall.title(
+                                          (_model.apiResultBarcode?.jsonBody ??
+                                              ''),
+                                        ).toString(),
+                                      );
+                                      if ((_model.apiResultmxf?.succeeded ??
+                                          true)) {
+                                        ScaffoldMessenger.of(context)
+                                            .showSnackBar(
+                                          SnackBar(
+                                            content: Text(
+                                              'Currently processing',
+                                              style: TextStyle(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryText,
+                                              ),
+                                            ),
+                                            duration:
+                                                Duration(milliseconds: 4000),
+                                            backgroundColor:
+                                                FlutterFlowTheme.of(context)
+                                                    .success,
+                                          ),
+                                        );
+                                      }
+
+                                      setState(() {});
+                                    },
+                                    text: FFLocalizations.of(context).getText(
+                                      'gxk9whgf' /* Summarize it */,
+                                    ),
+                                    options: FFButtonOptions(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          24.0, 0.0, 24.0, 0.0),
+                                      iconPadding:
+                                          EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .override(
+                                            fontFamily:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmallFamily,
+                                            color: Colors.white,
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey(
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmallFamily),
+                                          ),
+                                      elevation: 3.0,
+                                      borderSide: BorderSide(
+                                        color: Colors.transparent,
+                                        width: 1.0,
+                                      ),
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 8.0, 0.0, 0.0),
+                                  child: Text(
+                                    (_model.apiResultmxf?.bodyText ?? ''),
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyMedium,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 24.0, 0.0, 0.0),
@@ -451,7 +537,8 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
                               builder: (context) {
                                 final searchResults =
                                     BarcodeScannerCall.searchresult(
-                                          (_model.apiResultb0p?.jsonBody ?? ''),
+                                          (_model.apiResultBarcode?.jsonBody ??
+                                              ''),
                                         )?.toList() ??
                                         [];
                                 return ListView.separated(
