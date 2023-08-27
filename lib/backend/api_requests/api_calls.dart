@@ -112,7 +112,7 @@ class FlowiseCall {
   }) {
     final body = '''
 {
-  "question": "Lam the nao de phan biet ${product}, tra loi theo ngon ngu Tieng Viet"
+  "question": "Lam the nao de phan bien san pham ${product}, tra loi theo ngon ngu Tieng Viet, khong noi ve san pham day ma cach phan biet"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'flowise',
