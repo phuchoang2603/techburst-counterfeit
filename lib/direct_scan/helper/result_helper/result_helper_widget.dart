@@ -152,6 +152,7 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
     SchedulerBinding.instance.addPostFrameCallback((_) async {
       setState(() {
         _model.barcodeSuccess = false;
+        _model.gptSuccess = false;
       });
     });
 
@@ -507,6 +508,9 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
                                                             .secondary,
                                                   ),
                                                 );
+                                                setState(() {
+                                                  _model.gptSuccess = true;
+                                                });
                                               }
                                             }
 
@@ -567,35 +571,38 @@ class _ResultHelperWidgetState extends State<ResultHelperWidget>
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
-                                      FlutterFlowAudioPlayer(
-                                        audio: Audio.network(
-                                          TexttospeechCall.audio(
-                                            (_model.apiResultVoice?.jsonBody ??
-                                                ''),
+                                      if (_model.gptSuccess)
+                                        FlutterFlowAudioPlayer(
+                                          audio: Audio.network(
+                                            TexttospeechCall.audio(
+                                              (_model.apiResultVoice
+                                                      ?.jsonBody ??
+                                                  ''),
+                                            ),
+                                            metas: Metas(
+                                              id: 'sample3.mp3-00db7bfd',
+                                              title: 'Voice',
+                                            ),
                                           ),
-                                          metas: Metas(
-                                            id: 'sample3.mp3-00db7bfd',
-                                            title: 'Voice',
-                                          ),
+                                          titleTextStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .titleLarge,
+                                          playbackDurationTextStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .labelMedium,
+                                          fillColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .secondaryBackground,
+                                          playbackButtonColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .primary,
+                                          activeTrackColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .alternate,
+                                          elevation: 4.0,
+                                          playInBackground: PlayInBackground
+                                              .disabledRestoreOnForeground,
                                         ),
-                                        titleTextStyle:
-                                            FlutterFlowTheme.of(context)
-                                                .titleLarge,
-                                        playbackDurationTextStyle:
-                                            FlutterFlowTheme.of(context)
-                                                .labelMedium,
-                                        fillColor: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                        playbackButtonColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primary,
-                                        activeTrackColor:
-                                            FlutterFlowTheme.of(context)
-                                                .alternate,
-                                        elevation: 4.0,
-                                        playInBackground: PlayInBackground
-                                            .disabledRestoreOnForeground,
-                                      ),
                                     ],
                                   ),
                                 ),
