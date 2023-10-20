@@ -15,9 +15,9 @@ The Teachable Machine model was previously used to detect counterfeit products; 
 - github repo: https://github.com/phuchoang2603/teachable-machine-flask-API-server
 The Teachable Machine model, while effective, faced challenges in recognizing all counterfeit products due to inherent limitations in machine learning's ability to identify specific areas of manipulation. To optimize this, the project has shifted towards empowering users with the knowledge to identify counterfeit products themselves. Instead of relying solely on the machine learning model, users are guided through a process to manually inspect and verify products using provided instructions.
 
-### 2. Barcode Scanner with PyZbar 
+### 2. Barcode Scanner with PyZbar & NLP instruction with LangChain
 - github repo: https://github.com/phuchoang2603/ocr-langchain
-To provide users with an efficient and reliable means of counterfeit detection, the project has integrated the PyZbar library for barcode scanning. Users can now scan the barcode or product number using their smartphone's camera. The scanned data is then processed to extract product information.
+To provide users with an efficient and reliable means of counterfeit detection, the project has integrated the PyZbar library for barcode scanning & LangChain library for intelligent guidance. Users can now scan the barcode or product number using their smartphone's camera. The scanned data is then used to retrieve relevant information about the product's authenticity from online sources. This information is continue to be summarized by a language model (e.g., ChatGPT) to provide users with concise and relevant details about the product's authenticity. The process of analyzing the product's authenticity is supported by LangChain library.
 
 ## Optimization Strategies
 
@@ -39,6 +39,8 @@ To address the limitations of the Teachable Machine model, the project now facil
 
 - **ChatGPT (Language Model)**: Utilized for intelligent information retrieval and summarization from online sources.
 
+- **LangChain**: A Python library for intelligent information retrieval and summarization.
+
 ## Future Enhancements
 
 While the project has undergone significant optimization, there are still opportunities for further development:
@@ -54,11 +56,10 @@ While the project has undergone significant optimization, there are still opport
 ## Resources
 
 - [Flutter Documentation](https://flutter.dev/docs)
-- [Firestore Documentation](https://firebase.google.com/docs/firestore)
-- [imgBB Documentation](https://api.imgbb.com/)
 - [Flask Documentation](https://flask.palletsprojects.com/)
 - [Teachable Machine](https://teachablemachine.withgoogle.com/)
 - [PyZbar Documentation](https://github.com/NaturalHistoryMuseum/pyzbar)
 - [OpenAI's ChatGPT](https://platform.openai.com/docs/guides/chat)
+- [LangChain](https://python.langchain.com/docs/get_started/introduction)
 
 For more information and support, refer to the documentation provided for each technology.
